@@ -27,7 +27,7 @@ class _LoginScreen3State extends State<LoginScreen3>
   void _onHorizontalDragUpdate(DragUpdateDetails details) {
     final currDrag = details.globalPosition;
     final dragDistance = currDrag.dx - startDrag.dx;
-    if(dragDistance > 0){
+    if (dragDistance > 0) {
       dragDirection = 1.0;
     } else {
       dragDirection = -1.0;
@@ -36,24 +36,27 @@ class _LoginScreen3State extends State<LoginScreen3>
 
     setState(() {
       scrollPercent =
-          (startDragPercentScroll + (-singleCardDragPercent / numCards)).clamp(0.0 - (1 / numCards), (1 / numCards));
+          (startDragPercentScroll + (-singleCardDragPercent / numCards))
+              .clamp(0.0 - (1 / numCards), (1 / numCards));
       print(scrollPercent);
-
     });
   }
 
   void _onHorizontalDragEnd(DragEndDetails details) {
-
-    if(scrollPercent > 0.1666) {
+    if (scrollPercent > 0.1666) {
       print("FIRST CASE");
       controller_0To1.forward(from: scrollPercent * numCards);
-    } else if(scrollPercent < 0.1666  && scrollPercent > -0.1666 && dragDirection == -1.0) {
+    } else if (scrollPercent < 0.1666 &&
+        scrollPercent > -0.1666 &&
+        dragDirection == -1.0) {
       print("SECOND CASE");
       controller_0To1.reverse(from: scrollPercent * numCards);
-    } else  if(scrollPercent < 0.1666 && scrollPercent > -0.1666 && dragDirection == 1.0) {
+    } else if (scrollPercent < 0.1666 &&
+        scrollPercent > -0.1666 &&
+        dragDirection == 1.0) {
       print("THIRD CASE");
       controller_minus1To0.forward(from: scrollPercent * numCards);
-    } else if(scrollPercent < -0.1666){
+    } else if (scrollPercent < -0.1666) {
       print("LAST CASE");
       controller_minus1To0.reverse(from: scrollPercent * numCards);
     }
@@ -560,7 +563,7 @@ class _LoginScreen3State extends State<LoginScreen3>
     );
   }
 
-  Widget SignupPage(){
+  Widget SignupPage() {
     return new Container(
       height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(
@@ -683,7 +686,6 @@ class _LoginScreen3State extends State<LoginScreen3>
               ],
             ),
           ),
-
           Divider(
             height: 24.0,
           ),
@@ -735,8 +737,6 @@ class _LoginScreen3State extends State<LoginScreen3>
               ],
             ),
           ),
-
-
           Divider(
             height: 24.0,
           ),
