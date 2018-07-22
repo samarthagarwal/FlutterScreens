@@ -34,6 +34,16 @@ A collection of Login Screens with attractive UIs built with Flutter ready to be
      ),
   )`
   
+   ### Login Screen 3
+   
+   ![Screenshots on Android and iOS](./screenshots/login_screen_3.gif)
+   
+   ##### Usage
+   
+   `Container(
+       child: LoginScreen3(),
+    )`
+  
   ## Contribution and Donation
   
   Feel free to contribute. If you like the project and want to donate, [click here](https://www.paypal.me/samarthagarwal).
