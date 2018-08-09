@@ -7,7 +7,11 @@ class LoginScreen3 extends StatefulWidget {
 
 class _LoginScreen3State extends State<LoginScreen3>
     with TickerProviderStateMixin {
-  double scrollPercent = 0.0;
+
+  //The code is commented because instead of manual scrolling with animation,
+  //Now PageView is being used
+
+  /*double scrollPercent = 0.0;
   Offset startDrag;
   double startDragPercentScroll;
   double dragDirection; // -1 for left, +1 for right
@@ -66,11 +70,16 @@ class _LoginScreen3State extends State<LoginScreen3>
       startDragPercentScroll = null;
     });
   }
+  */
 
   @override
   void initState() {
     super.initState();
 
+    //The code is commented because instead of manual scrolling with animation,
+    //Now PageView is being used
+
+    /*
     controller_minus1To0 = new AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 500),
@@ -104,6 +113,7 @@ class _LoginScreen3State extends State<LoginScreen3>
 //      print(scrollPercent);
       setState(() {});
     });
+    */
   }
 
   Widget HomePage() {
@@ -468,6 +478,7 @@ class _LoginScreen3State extends State<LoginScreen3>
                                 children: <Widget>[
                                   new Expanded(
                                     child: new FlatButton(
+                                      onPressed: ()=>{},
                                       padding: EdgeInsets.only(
                                         top: 20.0,
                                         bottom: 20.0,
@@ -521,6 +532,7 @@ class _LoginScreen3State extends State<LoginScreen3>
                                 children: <Widget>[
                                   new Expanded(
                                     child: new FlatButton(
+                                      onPressed: ()=>{},
                                       padding: EdgeInsets.only(
                                         top: 20.0,
                                         bottom: 20.0,
@@ -804,38 +816,56 @@ class _LoginScreen3State extends State<LoginScreen3>
   }
 
   gotoLogin() {
-    controller_0To1.forward(from: 0.0);
+    //controller_0To1.forward(from: 0.0);
+    _controller.animateToPage(
+      0,
+      duration: Duration(milliseconds: 400),
+      curve: Curves.bounceInOut,
+    );
   }
 
   gotoSignup() {
-    controller_minus1To0.reverse(from: 0.0);
+    //controller_minus1To0.reverse(from: 0.0);
+    _controller.animateToPage(
+      2,
+      duration: Duration(milliseconds: 400),
+      curve: Curves.bounceInOut,
+    );
   }
+
+  PageController _controller = new PageController(initialPage: 1);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: new GestureDetector(
-        onHorizontalDragStart: _onHorizontalDragStart,
-        onHorizontalDragUpdate: _onHorizontalDragUpdate,
-        onHorizontalDragEnd: _onHorizontalDragEnd,
-        behavior: HitTestBehavior.translucent,
-        child: Stack(
-          children: <Widget>[
-            new FractionalTranslation(
-              translation: Offset(-1 - (scrollPercent / (1 / numCards)), 0.0),
-              child: SignupPage(),
-            ),
-            new FractionalTranslation(
-              translation: Offset(0 - (scrollPercent / (1 / numCards)), 0.0),
-              child: HomePage(),
-            ),
-            new FractionalTranslation(
-              translation: Offset(1 - (scrollPercent / (1 / numCards)), 0.0),
-              child: LoginPage(),
-            ),
-          ],
-        ),
-      ),
-    );
+        height: MediaQuery.of(context).size.height,
+//      child: new GestureDetector(
+//        onHorizontalDragStart: _onHorizontalDragStart,
+//        onHorizontalDragUpdate: _onHorizontalDragUpdate,
+//        onHorizontalDragEnd: _onHorizontalDragEnd,
+//        behavior: HitTestBehavior.translucent,
+//        child: Stack(
+//          children: <Widget>[
+//            new FractionalTranslation(
+//              translation: Offset(-1 - (scrollPercent / (1 / numCards)), 0.0),
+//              child: SignupPage(),
+//            ),
+//            new FractionalTranslation(
+//              translation: Offset(0 - (scrollPercent / (1 / numCards)), 0.0),
+//              child: HomePage(),
+//            ),
+//            new FractionalTranslation(
+//              translation: Offset(1 - (scrollPercent / (1 / numCards)), 0.0),
+//              child: LoginPage(),
+//            ),
+//          ],
+//        ),
+//      ),
+        child: PageView(
+          controller: _controller,
+          physics: new AlwaysScrollableScrollPhysics(),
+          children: <Widget>[LoginPage(), HomePage(), SignupPage()],
+          scrollDirection: Axis.horizontal,
+        ));
   }
 }
