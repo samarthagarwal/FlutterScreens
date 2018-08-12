@@ -819,8 +819,8 @@ class _LoginScreen3State extends State<LoginScreen3>
     //controller_0To1.forward(from: 0.0);
     _controller.animateToPage(
       0,
-      duration: Duration(milliseconds: 400),
-      curve: Curves.bounceInOut,
+      duration: Duration(milliseconds: 800),
+      curve: Curves.bounceOut,
     );
   }
 
@@ -828,12 +828,12 @@ class _LoginScreen3State extends State<LoginScreen3>
     //controller_minus1To0.reverse(from: 0.0);
     _controller.animateToPage(
       2,
-      duration: Duration(milliseconds: 400),
-      curve: Curves.bounceInOut,
+      duration: Duration(milliseconds: 800),
+      curve: Curves.bounceOut,
     );
   }
 
-  PageController _controller = new PageController(initialPage: 1);
+  PageController _controller = new PageController(initialPage: 1, viewportFraction: 1.0);
 
   @override
   Widget build(BuildContext context) {

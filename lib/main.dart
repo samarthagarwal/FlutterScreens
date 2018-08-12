@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'login_screen_1.dart';
-import 'login_screen_2.dart';
-import 'login_screen_3.dart';
+import 'package:flutter_login_screens/Examples/buttons.dart';
+
 
 void main() => runApp(new MyApp());
 
@@ -14,6 +13,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: new MyHomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -29,6 +29,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: new SingleChildScrollView(
+        child: ButtonExample(),
+        )
 //        child: LoginScreen1(
 //          primaryColor: Color(0xFF4aa0d5),
 //          backgroundColor: Colors.white,
@@ -41,8 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //          foregroundColor: Colors.white,
 //          logo: new AssetImage("assets/images/full-bloom.png"),
 //        ),
-          child: LoginScreen3()
-      ),
+//          child: LoginScreen3()
     );
   }
 }

@@ -4,6 +4,50 @@ A collection of Login Screens with attractive UIs built with Flutter ready to be
 
 ## Screenshots And Usage
 
+### Last Update: Added Buttons
+
+![Screenshots on iOS](./screenshots/buttons1.png)
+
+
+#### Simple Round Button
+
+```
+SimpleRoundButton(
+    backgroundColor: Colors.redAccent,
+    buttonText: Text("LOGIN", 
+        style: TextStyle(
+            color: Colors.white
+        ),
+    ),
+    textColor: Colors.white,
+)
+```
+
+#### Simple Round Icon Button 
+
+```
+SimpleRoundIconButton(
+    backgroundColor: Colors.orangeAccent,
+    buttonText: Text("SEND EMAIL", 
+        style: TextStyle(
+            color: Colors.white
+        ),
+    ),        
+    textColor: Colors.white,
+    icon: Icon(Icons.email),
+)
+```
+
+#### Simple Round Icon Only Button 
+```
+SimpleRoundOnlyIconButton(
+  backgroundColor: Colors.blueAccent,
+  icon: Icon(Icons.phone),
+  iconAlignment: Alignment.center,
+)
+```
+___
+
 ### Login Screen 1
 
 ![Screenshots on Android and iOS](./screenshots/login_screen_1.png)
