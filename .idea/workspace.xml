@@ -4,15 +4,8 @@
     <option name="SCOPE_TYPE" value="10" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0159c001-1a27-4f70-926c-30cd81d61e07" name="Default" comment="Added Buttons&#10;- Simple Round Button&#10;- Simple Round Icon Button&#10;- Simple Round Only Icon Button">
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/Examples/buttons.dart" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/buttons/simple_round_button.dart" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/buttons/simple_round_icon_button.dart" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/buttons/simple_round_only_icon_button.dart" />
+    <list default="true" id="0159c001-1a27-4f70-926c-30cd81d61e07" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/lib/login_screen_3.dart" afterPath="$PROJECT_DIR$/lib/login_screen_3.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" afterPath="$PROJECT_DIR$/lib/main.dart" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -139,7 +132,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534115490620" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534115497504" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -468,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533850102253</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Buttons&#10;- Simple Round Button&#10;- Simple Round Icon Button&#10;- Simple Round Only Icon Button">
+      <created>1534115504798</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1534115504798</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
