@@ -38,7 +38,7 @@ If you want to change the icon, size or color, as of now, please edit the file `
 
 #### Flip Loader 2
 ```
-FlipLoader1() // No parameters required
+FlipLoader2() // No parameters required
 ```
 If you want to change the icon, size or color, as of now, please edit the file `lib/loaders/flip_loader_2.dart`.
 
