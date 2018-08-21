@@ -4,7 +4,49 @@ A collection of Login Screens with attractive UIs built with Flutter ready to be
 
 ## Screenshots And Usage
 
-### Last Update: Added Buttons
+#### Last Update: Added Loaders
+
+##Loaders
+
+![Screenshots on iOS](./screenshots/loaders_1.gif)
+
+`ColorLoader` requires `colors` and `duration` as mandatory parameters. `FlipLoader` and `FlipLoader2` do not require any parameters.
+
+#### Color Loader
+```
+List<Color> colors = [
+    Colors.red,
+    Colors.green,
+    Colors.indigo,
+    Colors.pinkAccent,
+    Colors.blue
+];
+ 
+
+//Use in widget tree
+ColorLoader(
+   colors: colors,
+   duration: Duration(milliseconds: 1200)
+),
+```
+
+#### Flip Loader
+```
+FlipLoader() // No parameters required
+```
+If you want to change the icon, size or color, as of now, please edit the file `lib/loaders/flip_loader.dart`.
+
+#### Flip Loader 2
+```
+FlipLoader1() // No parameters required
+```
+If you want to change the icon, size or color, as of now, please edit the file `lib/loaders/flip_loader_2.dart`.
+
+___
+###### I am working on more loaders. These loaders will also be updated and will be parameterized for easy usage and customization.
+___
+
+## Buttons
 
 ![Screenshots on iOS](./screenshots/buttons1.png)
 
@@ -47,6 +89,7 @@ SimpleRoundOnlyIconButton(
 )
 ```
 ___
+##Login Screens
 
 ### Login Screen 1
 

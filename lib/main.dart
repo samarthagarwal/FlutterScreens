@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_screens/Examples/buttons.dart';
-
+import 'loaders/color_loader.dart';
+import 'loaders/flip_loader.dart';
+import 'loaders/flip_loader_2.dart';
 
 void main() => runApp(new MyApp());
 
@@ -24,28 +25,37 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  List<Color> colors = [
+    Colors.red,
+    Colors.green,
+    Colors.indigo,
+    Colors.pinkAccent,
+    Colors.blue
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: new SingleChildScrollView(
-        child: ButtonExample(),
-        )
-//        child: LoginScreen1(
-//          primaryColor: Color(0xFF4aa0d5),
-//          backgroundColor: Colors.white,
-//          backgroundImage: new AssetImage("assets/images/full-bloom.png"),
-//        ),
-//        child: LoginScreen2(
-//          backgroundColor1: Color(0xFF444152),
-//          backgroundColor2: Color(0xFF6f6c7d),
-//          highlightColor: Color(0xfff65aa3),
-//          foregroundColor: Colors.white,
-//          logo: new AssetImage("assets/images/full-bloom.png"),
-//        ),
-//          child: LoginScreen3()
+      body: Container(
+        child: new Padding(
+          padding: const EdgeInsets.only(top: 100.0),
+          child: new Column(
+            children: <Widget>[
+              Divider(height: 200.0, color: Colors.white,),
+              ColorLoader(
+                  colors: colors,
+                  duration: Duration(milliseconds: 1200)
+              ),
+              Divider(height: 150.0, color: Colors.white,),
+              FlipLoader2(),
+              Divider(height: 150.0, color: Colors.white,),
+              FlipLoader()
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
-
-
