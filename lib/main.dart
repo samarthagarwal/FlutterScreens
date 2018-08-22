@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'loaders/color_loader.dart';
 import 'loaders/flip_loader.dart';
-import 'loaders/flip_loader_2.dart';
 
 void main() => runApp(new MyApp());
 
@@ -49,9 +48,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   duration: Duration(milliseconds: 1200)
               ),
               Divider(height: 150.0, color: Colors.white,),
-              FlipLoader2(loaderBackground: Colors.black, iconColor: Colors.red, icon: Icons.strikethrough_s,),
-              Divider(height: 150.0, color: Colors.white,),
-              FlipLoader(loaderBackground: Colors.orangeAccent, iconColor: Colors.blueAccent, icon: Icons.subway),
+              FlipLoader(loaderBackground: Colors.black, iconColor: Colors.red, icon: Icons.strikethrough_s, animationType: "full_flip"),
+              Divider(height: 150.0, color: Colors.white),
+              FlipLoader(loaderBackground: Colors.blueAccent, iconColor: Colors.orangeAccent, icon: Icons.subway, animationType: "half_flip"),
             ],
           ),
         ),

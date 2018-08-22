@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
 import 'dart:math';
 
 class FlipLoader extends StatefulWidget {
   Color loaderBackground;
   Color iconColor;
   IconData icon;
+  String animationType;
 
-  FlipLoader({this.loaderBackground = Colors.redAccent, this.iconColor = Colors.white, this.icon = Icons.sync});
+  FlipLoader({this.loaderBackground = Colors.redAccent, this.iconColor = Colors.white, this.icon = Icons.sync, this.animationType = "full_flip"});
   
   
   @override
-  _FlipLoaderState createState() => _FlipLoaderState(this.loaderBackground, this.iconColor, this.icon);
+  _FlipLoaderState createState() => _FlipLoaderState(this.loaderBackground, this.iconColor, this.icon, this.animationType);
 }
 
 class _FlipLoaderState extends State<FlipLoader>
@@ -23,40 +23,97 @@ class _FlipLoaderState extends State<FlipLoader>
   Color loaderColor;
   Color iconColor;
   IconData icon;
-  double verticalRotation = 0.0;
-  double horizontalRotation = 0.0;
+  Widget loaderIconChild;
+  String animationType;
 
-  _FlipLoaderState(this.loaderColor, this.iconColor, this.icon);
+  _FlipLoaderState(this.loaderColor, this.iconColor, this.icon, this.animationType);
 
   @override
   void initState() {
     super.initState();
 
-    controller = AnimationController(
-        duration: const Duration(milliseconds: 4000), vsync: this);
-    rotationHorizontal = Tween<double>(begin: -1.0, end: 1.0).animate(
-        CurvedAnimation(
-            parent: controller,
-            curve: Interval(0.0, 0.50, curve: Curves.linear)));
-    rotationVertical = Tween<double>(begin: -1.0, end: 1.0).animate(
-        CurvedAnimation(
-            parent: controller,
-            curve: Interval(0.50, 1.0, curve: Curves.linear)));
-
+    controller = createAnimationController(animationType);
 
     controller.addStatusListener((status){
-      if (status == AnimationStatus.completed) {
-        setState(() {
-          controller.repeat();
-        });
+      // Play animation backwards and forwards for full flip
+      if (animationType == "half_flip") {
+        print('half line 40');
+        if (status == AnimationStatus.completed) {
+          setState(() {
+            controller.repeat();
+          });
+        }
+      }
+      // play animation on repeat for half flip
+      else if (animationType == "full_flip") {
+        print('full line 57');
+        if (status == AnimationStatus.completed) {
+          setState(() {
+            controller.reverse();
+          });
+        }
+        if (status == AnimationStatus.dismissed) {
+          setState(() {
+            controller.forward();
+          });
+        }
+      }
+      // custom animation state 
+      else {
+        print("TODO not sure yet");
       }
     });
 
     controller.forward();
   }
 
+  AnimationController createAnimationController([String type = 'full_flip']) {
+    AnimationController animCtrl;
+
+    switch(type) {
+      case "half_flip":
+        animCtrl = AnimationController(duration: const Duration(milliseconds: 2000), vsync: this);
+        
+        // Horizontal animation
+        this.rotationHorizontal = Tween<double>(begin: 0.0, end: 1.0).animate(
+          CurvedAnimation(
+            parent: animCtrl,
+            curve: Interval(0.0, 0.50, curve: Curves.fastOutSlowIn)));
+
+        // Vertical animation
+        this.rotationVertical = Tween<double>(begin: 0.0, end: 1.0).animate(
+          CurvedAnimation(
+            parent: animCtrl,
+            curve: Interval(0.50, 1.0, curve: Curves.fastOutSlowIn))); 
+      break;
+      case "full_flip":
+      default:
+        animCtrl = AnimationController(duration: const Duration(milliseconds: 4000), vsync: this);
+        
+        this.rotationHorizontal = Tween<double>(begin: -1.0, end: 1.0).animate(
+          CurvedAnimation(
+            parent: animCtrl,
+            curve: Interval(0.0, 0.50, curve: Curves.linear)));
+        this.rotationVertical = Tween<double>(begin: -1.0, end: 1.0).animate(
+          CurvedAnimation(
+            parent: animCtrl,
+            curve: Interval(0.50, 1.0, curve: Curves.linear)));
+      break;
+    }
+
+    return animCtrl;
+  }
+
   @override
   Widget build(BuildContext context) {
+    if (animationType == "half_flip") {
+      return buildFullFlipper(context);
+    } else {
+      return buildHalfFlipper(context);
+    }
+  }
+
+  Widget buildHalfFlipper(BuildContext context) {
     return new AnimatedBuilder(
       animation: controller,
       builder: (BuildContext context, Widget child) {
@@ -82,6 +139,36 @@ class _FlipLoaderState extends State<FlipLoader>
                   size: 20.0,
                 ),
               )
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget buildFullFlipper(BuildContext context) {
+    return new AnimatedBuilder(
+      animation: controller,
+      builder: (BuildContext context, Widget child) {
+        return Container(
+          child: new Transform(
+            transform: Matrix4.identity()
+              ..setEntry(3, 2, 0.006)
+              ..rotateX((pi * rotationVertical.value))
+              ..rotateY((pi * rotationHorizontal.value)),
+            alignment: Alignment.center,
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: new BorderRadius.all(const Radius.circular(8.0)),
+                color: loaderColor,
+              ),
+              width: 40.0,
+              height: 40.0,
+              child: new Center(
+                child: Icon(
+                  icon, color: iconColor
+                ),
+              ),
             ),
           ),
         );
