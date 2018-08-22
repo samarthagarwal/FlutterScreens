@@ -31,19 +31,37 @@ ColorLoader(
 ```
 
 #### Flip Loader
+_Example #1_
 ```
-FlipLoader() // No parameters required
+FlipLoader(
+  loaderBackground: Colors.red,
+  iconColor: Colors.white,
+  icon: Icons.email,
+  animationType: "full_flip"),
 ```
-If you want to change the icon, size or color, as of now, please edit the file `lib/loaders/flip_loader.dart`.
-
-#### Flip Loader 2
+_Example #2_
 ```
-FlipLoader2() // No parameters required
+FlipLoader(
+  loaderBackground: Colors.blueAccent,
+  iconColor: Colors.orangeAccent,
+  icon: Icons.subway,
+  animationType: "half_flip",
+  rotateIcon: true,
+),
 ```
-If you want to change the icon, size or color, as of now, please edit the file `lib/loaders/flip_loader_2.dart`.
-
+_Example #3_
+```
+FlipLoader(
+  loaderBackground: Colors.green,
+  iconColor: Colors.white,
+  icon: Icons.wifi,
+  animationType: "half_flip",
+  shape: "circle",
+  rotateIcon: false,
+),
+```
 ___
-###### I am working on more loaders. These loaders will also be updated and will be parameterized for easy usage and customization.
+###### I am working on more loaders. These loaders will also be updated. Thanks to [jakeleveroni](https://github.com/jakeleveroni) for parameterizing the FlipLoader. 
 ___
 
 ## Buttons
