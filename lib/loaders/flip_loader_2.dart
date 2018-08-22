@@ -3,17 +3,28 @@ import 'dart:async';
 import 'dart:math';
 
 class FlipLoader2 extends StatefulWidget {
+  Color loaderBackground;
+  Color iconColor;
+  IconData icon;
+
+  FlipLoader2({this.loaderBackground = Colors.blueAccent, this.iconColor = Colors.white, this.icon = Icons.wifi});
+
   @override
-  _FlipLoader2State createState() => _FlipLoader2State();
+  _FlipLoader2State createState() => _FlipLoader2State(this.loaderBackground, this.iconColor, this.icon);
 }
 
 class _FlipLoader2State extends State<FlipLoader2>
     with SingleTickerProviderStateMixin {
+  Color loaderBackground;
+  Color iconColor;
+  IconData icon;
   AnimationController controller;
   Animation<double> rotationHorizontal;
   Animation<double> rotationVertical;
   double verticalRotation = 0.0;
   double horizontalRotation = 0.0;
+
+  _FlipLoader2State(this.loaderBackground, this.iconColor, this.icon);
 
   @override
   void initState() {
@@ -61,13 +72,13 @@ class _FlipLoader2State extends State<FlipLoader2>
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: new BorderRadius.all(const Radius.circular(8.0)),
-                color: Colors.blueAccent,
+                color: loaderBackground,
               ),
               width: 40.0,
               height: 40.0,
               child: new Center(
                 child: Icon(
-                  Icons.wifi, color: Colors.white
+                  icon, color: iconColor
                 ),
               ),
             ),

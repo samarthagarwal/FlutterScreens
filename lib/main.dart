@@ -49,9 +49,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   duration: Duration(milliseconds: 1200)
               ),
               Divider(height: 150.0, color: Colors.white,),
-              FlipLoader2(),
+              FlipLoader2(loaderBackground: Colors.black, iconColor: Colors.red, icon: Icons.strikethrough_s,),
               Divider(height: 150.0, color: Colors.white,),
-              FlipLoader()
+              FlipLoader(loaderBackground: Colors.orangeAccent, iconColor: Colors.blueAccent, icon: Icons.subway),
             ],
           ),
         ),
