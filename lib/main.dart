@@ -42,15 +42,17 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.only(top: 100.0),
           child: new Column(
             children: <Widget>[
-              Divider(height: 200.0, color: Colors.white,),
+              Divider(height: 20.0, color: Colors.white,),
               ColorLoader(
                   colors: colors,
                   duration: Duration(milliseconds: 1200)
               ),
-              Divider(height: 150.0, color: Colors.white,),
-              FlipLoader(loaderBackground: Colors.black, iconColor: Colors.red, icon: Icons.strikethrough_s, animationType: "full_flip"),
-              Divider(height: 150.0, color: Colors.white),
-              FlipLoader(loaderBackground: Colors.blueAccent, iconColor: Colors.orangeAccent, icon: Icons.subway, animationType: "half_flip"),
+              Divider(height: 100.0, color: Colors.white,),
+              FlipLoader(loaderBackground: Colors.red, iconColor: Colors.white, icon: Icons.email, animationType: "full_flip"),
+              Divider(height: 100.0, color: Colors.white),
+              FlipLoader(loaderBackground: Colors.blueAccent, iconColor: Colors.orangeAccent, icon: Icons.subway, animationType: "half_flip", rotateIcon: true,),
+              Divider(height: 100.0, color: Colors.white),
+              FlipLoader(loaderBackground: Colors.green, iconColor: Colors.white, icon: Icons.wifi, animationType: "half_flip", shape: "circle", rotateIcon: false,),
             ],
           ),
         ),
