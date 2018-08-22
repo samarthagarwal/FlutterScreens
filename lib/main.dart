@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'loaders/color_loader_2.dart';
+import 'loaders/color_loader.dart';
+import 'loaders/flip_loader.dart';
 
 void main() => runApp(new MyApp());
 
@@ -24,6 +25,14 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+  List<Color> colors = [
+    Colors.red,
+    Colors.green,
+    Colors.indigo,
+    Colors.pinkAccent,
+    Colors.blue
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +42,15 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.only(top: 100.0),
           child: new Column(
             children: <Widget>[
-              new Center(child: ColorLoader2())
+              Divider(height: 200.0, color: Colors.white,),
+              ColorLoader(
+                  colors: colors,
+                  duration: Duration(milliseconds: 1200)
+              ),
+              Divider(height: 150.0, color: Colors.white,),
+              FlipLoader(loaderBackground: Colors.black, iconColor: Colors.red, icon: Icons.strikethrough_s, animationType: "full_flip"),
+              Divider(height: 150.0, color: Colors.white),
+              FlipLoader(loaderBackground: Colors.blueAccent, iconColor: Colors.orangeAccent, icon: Icons.subway, animationType: "half_flip"),
             ],
           ),
         ),
