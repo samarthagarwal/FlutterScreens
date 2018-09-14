@@ -16,6 +16,7 @@ class _ColorLoaderState extends State<ColorLoader>
     with SingleTickerProviderStateMixin {
   final List<Color> colors;
   final Duration duration;
+  Timer timer;
 
   _ColorLoaderState(this.colors, this.duration);
 
@@ -59,7 +60,7 @@ class _ColorLoaderState extends State<ColorLoader>
 
     tweenIndex = 0;
 
-    Timer.periodic(duration, (Timer t) {
+    timer = Timer.periodic(duration, (Timer t) {
       setState(() {
         tweenIndex = (tweenIndex + 1) % colors.length;
       });
@@ -83,6 +84,7 @@ class _ColorLoaderState extends State<ColorLoader>
   @override
   void dispose() {
     super.dispose();
+    timer.cancel();
     controller.dispose();
   }
 }
