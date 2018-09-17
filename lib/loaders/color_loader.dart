@@ -83,8 +83,8 @@ class _ColorLoaderState extends State<ColorLoader>
 
   @override
   void dispose() {
-    super.dispose();
     timer.cancel();
     controller.dispose();
+    super.dispose();
   }
 }
