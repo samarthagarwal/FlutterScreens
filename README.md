@@ -12,9 +12,9 @@ A collection of Login Screens, Buttons and Loaders with attractive UIs, built wi
 
 #### ColorLoaders
 
-| ![Screenshot](./screenshots/color_loader.gif) | ![Screenshot](./screenshots/color_loader_2.gif) | ![Screenshot](./screenshots/color_loader_3.gif) |
+| ![Screenshot](./screenshots/color_loader.gif) Color Loader 1| ![Screenshot](./screenshots/color_loader_2.gif) Color Loader 2 | ![Screenshot](./screenshots/color_loader_3.gif) Color Loader 3 |
 |-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| ![Screenshot](./screenshots/color_loader_4.gif) | ![Screenshot](./screenshots/color_loader_5.gif) |                                               |
+| ![Screenshot](./screenshots/color_loader_4.gif) Color Loader 4 | ![Screenshot](./screenshots/color_loader_5.gif) Color Loader 5 |                                               |
 
 #### FlipLoaders
 _Example #1_
