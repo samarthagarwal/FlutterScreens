@@ -12,7 +12,7 @@ A collection of Login Screens, Buttons and Loaders with attractive UIs, built wi
 
 #### ColorLoaders
 
-| ![Screenshot](./screenshots/color_loader.gif) Color Loader 1| ![Screenshot](./screenshots/color_loader_2.gif) Color Loader 2 | ![Screenshot](./screenshots/color_loader_3.gif) Color Loader 3 |
+| ![Screenshot](./screenshots/color_loader.gif) Color Loader 1 | ![Screenshot](./screenshots/color_loader_2.gif) Color Loader 2 | ![Screenshot](./screenshots/color_loader_3.gif) Color Loader 3 |
 |-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 | ![Screenshot](./screenshots/color_loader_4.gif) Color Loader 4 | ![Screenshot](./screenshots/color_loader_5.gif) Color Loader 5 |                                               |
 
@@ -101,13 +101,15 @@ ___
 
 ##### Usage
 
-```Container(
+```
+Container(
 	child: LoginScreen1(
 	primaryColor: Color(0xFF4aa0d5),
 	backgroundColor: Colors.white,
 	backgroundImage: new AssetImage("assets/images/full-bloom.png"),
     ),
-)```
+)
+```
 
  ### Login Screen 2
 
@@ -115,7 +117,8 @@ ___
 
  ##### Usage
 
- ```Container(
+ ```
+ Container(
  	child: LoginScreen2(
         backgroundColor1: Color(0xFF444152),
         backgroundColor2: Color(0xFF6f6c7d),
@@ -123,7 +126,8 @@ ___
         foregroundColor: Colors.white,
         logo: new AssetImage("assets/images/full-bloom.png"),
         ),
-    )```
+    )
+ ```
 
    ### Login Screen 3
 
@@ -131,13 +135,12 @@ ___
 
    ##### Usage
 
-   ```Container(
+   ```
+   Container(
    		child: LoginScreen3(),
-   )```
+   )
+   ```
 
   ## Contribution and Donation
 
   Feel free to contribute. If you like the project and want to donate, [click here](https://www.paypal.me/samarthagarwal).
-
-
-```
