@@ -1,0 +1,733 @@
+{
+  "title" : "",
+  "description" : "",
+  "author" : "",
+  "width" : 950.0,
+  "height" : 1538.0,
+  "version" : "0.5",
+  "editRate" : 30,
+  "authoringClientName" :  {
+    "name" : "Camtasia",
+    "platform" : "Mac",
+    "version" : "3.1.2"
+  },
+  "sourceBin" : [
+    {
+      "id" : 1,
+      "src" : "./recordings/1534912293.317278/Rec 8-22-2018.trec",
+      "rect" : [0, 0, 950, 1538],
+      "lastMod" : "20180822T041932",
+      "sourceTracks" : [
+        {
+          "range" : [0, 336],
+          "type" : 0,
+          "editRate" : 30,
+          "trackRect" : [0, 0, 950, 1538],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "metaData" : "2b7b6a01-7a1f-11e2-83d0-0017f200be7f;2b7b6af0-7a1f-11e2-83d0-0017f200be7f;2b7b6af1-7a1f-11e2-83d0-0017f200be7f;2b7b6af2-7a1f-11e2-83d0-0017f200be7f;2b7b6af3-7a1f-11e2-83d0-0017f200be7f;2b7b6af5-7a1f-11e2-83d0-0017f200be7f;2b7b6af6-7a1f-11e2-83d0-0017f200be7f;2b7b6af7-7a1f-11e2-83d0-0017f200be7f;2b7b6af8-7a1f-11e2-83d0-0017f200be7f;2b7b6af9-7a1f-11e2-83d0-0017f200be7f;2b7b6afa-7a1f-11e2-83d0-0017f200be7f;2b7b6afb-7a1f-11e2-83d0-0017f200be7f;2b7b6afc-7a1f-11e2-83d0-0017f200be7f;"
+        }
+      ]
+    }
+  ],
+  "timeline" : {
+    "id" : 2,
+    "sceneTrack" : {
+      "scenes" : [
+        {
+          "duration" : 11.2,
+          "title" : "",
+          "type" : "",
+          "csml" : {
+            "tracks" : [
+              {
+                "trackIndex" : 0,
+                "medias" : [
+                  {
+                    "id" : 3,
+                    "_type" : "ScreenVMFile",
+                    "src" : 1,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "Rec 8-22-2018"
+                    },
+                    "parameters" : {
+                      "cursorScale" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "cursorOpacity" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 336,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 336,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 1,
+                "medias" : [
+                  {
+                    "id" : 4,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "text-rectangle",
+                      "style" : "basic",
+                      "fill-color-blue" : 1.0,
+                      "fill-color-green" : 1.0,
+                      "fill-color-opacity" : 1.0,
+                      "fill-color-red" : 1.0,
+                      "height" : 288.0,
+                      "stroke-color-blue" : 0.56078431372549,
+                      "stroke-color-green" : 0.686274509803922,
+                      "stroke-color-opacity" : 1.0,
+                      "stroke-color-red" : 0.0196078431372549,
+                      "stroke-width" : 2.0,
+                      "tail-x" : -101.916251816883,
+                      "tail-y" : 33.0224382267601,
+                      "width" : 578.522106328998,
+                      "word-wrap" : 1.0,
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "left",
+                      "stroke-style" : "solid",
+                      "text" : "List<Color> colors = [\n  Colors.red,\n  Colors.green,\n  Colors.indigo,\n  Colors.pinkAccent,\n  Colors.blue\n];\n...\nColorLoader(\n    colors: colors,\n    duration: Duration(milliseconds: 1200)\n),",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : 0.266666666666667,
+                        "color-green" : 0.231372549019608,
+                        "color-opacity" : 1.0,
+                        "color-red" : 0.184313725490196,
+                        "size" : 64.0,
+                        "tracking" : 0.0,
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : [{"name":"fgColor","rangeEnd":100,"rangeStart":89,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":100,"rangeStart":89,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":79,"rangeStart":68,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":89,"rangeStart":79,"value":"(102,23,122,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":190,"rangeStart":105,"value":0,"valueType":"int"},{"name":"fontName","rangeEnd":190,"rangeStart":0,"value":"Menlo","valueType":"string"},{"name":"fontItalic","rangeEnd":89,"rangeStart":79,"value":2,"valueType":"int"},{"name":"fgColor","rangeEnd":190,"rangeStart":186,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":68,"rangeStart":62,"value":"(102,23,122,255)","valueType":"color"},{"name":"fgColor","rangeEnd":137,"rangeStart":105,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":62,"rangeStart":51,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":35,"rangeStart":32,"value":"(102,23,122,255)","valueType":"color"},{"name":"fgColor","rangeEnd":32,"rangeStart":19,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":51,"rangeStart":46,"value":"(102,23,122,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":79,"rangeStart":68,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":137,"rangeStart":19,"value":400,"valueType":"int"},{"name":"fontItalic","rangeEnd":68,"rangeStart":62,"value":2,"valueType":"int"},{"name":"fontItalic","rangeEnd":35,"rangeStart":32,"value":2,"valueType":"int"},{"name":"fontItalic","rangeEnd":32,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":182,"rangeStart":143,"value":"(0,0,0,255)","valueType":"color"},{"name":"underline","rangeEnd":190,"rangeStart":0,"value":0,"valueType":"int"},{"name":"strikethrough","rangeEnd":190,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":46,"rangeStart":35,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":62,"rangeStart":51,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":19,"rangeStart":12,"value":"(102,23,122,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":105,"rangeStart":100,"value":2,"valueType":"int"},{"name":"fgColor","rangeEnd":105,"rangeStart":100,"value":"(102,23,122,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":46,"rangeStart":35,"value":0,"valueType":"int"},{"name":"fontSize","rangeEnd":190,"rangeStart":0,"value":20,"valueType":"double"},{"name":"fontWeight","rangeEnd":12,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fgColor","rangeEnd":186,"rangeStart":182,"value":"(4,50,254,255)","valueType":"color"},{"name":"fontWeight","rangeEnd":190,"rangeStart":143,"value":400,"valueType":"int"},{"name":"fontItalic","rangeEnd":51,"rangeStart":46,"value":2,"valueType":"int"},{"name":"fontWeight","rangeEnd":143,"rangeStart":137,"value":700,"valueType":"int"},{"name":"fgColor","rangeEnd":143,"rangeStart":137,"value":"(102,23,122,255)","valueType":"color"},{"name":"fgColor","rangeEnd":12,"rangeStart":0,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontWeight","rangeEnd":19,"rangeStart":12,"value":700,"valueType":"int"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : 1.69503088665044,
+                      "translation1" : 487.391733284868
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 336,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 336,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "default-text" : "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1561\\cocoasubrtf200\n{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\\f2\\fnil\\fcharset0 Menlo-Italic;\n}\n{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red82\\green0\\blue103;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c0\\c0\\c0;\\cssrgb\\c40000\\c9020\\c47843;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\pardirnatural\\partightenfactor0\n\n\\f0\\fs28 \\cf2 \\ulnone List<Color> \n\\f1\\b \\cf3 colors \n\\f0\\b0 \\cf2 = [\\\n  Colors.\n\\f2\\i \\cf3 red\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 green\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 indigo\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 pinkAccent\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 blue\\\n\n\\f0\\i0 \\cf2 ];\\\n}",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 2,
+                "medias" : [
+                  {
+                    "id" : 5,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "text-rectangle",
+                      "style" : "basic",
+                      "fill-color-blue" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-color-green" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-color-opacity" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-color-red" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "height" : {
+                        "type" : "double",
+                        "defaultValue" : 104.063135901162,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-blue" : {
+                        "type" : "double",
+                        "defaultValue" : 0.56078431372549,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-green" : {
+                        "type" : "double",
+                        "defaultValue" : 0.686274509803922,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-opacity" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-red" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0196078431372549,
+                        "interp" : "linr"
+                      },
+                      "stroke-width" : {
+                        "type" : "double",
+                        "defaultValue" : 2.0,
+                        "interp" : "linr"
+                      },
+                      "tail-x" : {
+                        "type" : "double",
+                        "defaultValue" : -101.916251816883,
+                        "interp" : "linr"
+                      },
+                      "tail-y" : {
+                        "type" : "double",
+                        "defaultValue" : 124.990870276179,
+                        "interp" : "linr"
+                      },
+                      "width" : {
+                        "type" : "double",
+                        "defaultValue" : 578.522106328998,
+                        "interp" : "linr"
+                      },
+                      "word-wrap" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "left",
+                      "stroke-style" : "solid",
+                      "text" : "FlipLoader(\n    loaderBackground: Colors.red,\n    iconColor: Colors.white,\n    icon: Icons.email,\n    animationType: \"full_flip\"),",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : {
+                          "type" : "double",
+                          "defaultValue" : 0.266666666666667,
+                          "interp" : "linr"
+                        },
+                        "color-green" : {
+                          "type" : "double",
+                          "defaultValue" : 0.231372549019608,
+                          "interp" : "linr"
+                        },
+                        "color-opacity" : {
+                          "type" : "double",
+                          "defaultValue" : 1.0,
+                          "interp" : "linr"
+                        },
+                        "color-red" : {
+                          "type" : "double",
+                          "defaultValue" : 0.184313725490196,
+                          "interp" : "linr"
+                        },
+                        "size" : {
+                          "type" : "double",
+                          "defaultValue" : 64.0,
+                          "interp" : "linr"
+                        },
+                        "tracking" : {
+                          "type" : "double",
+                          "defaultValue" : 0.0,
+                          "interp" : "linr"
+                        },
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : [{"name":"fgColor","rangeEnd":128,"rangeStart":117,"value":"(0,127,1,255)","valueType":"color"},{"name":"fgColor","rangeEnd":44,"rangeStart":41,"value":"(102,23,122,255)","valueType":"color"},{"name":"fgColor","rangeEnd":96,"rangeStart":91,"value":"(102,23,122,255)","valueType":"color"},{"name":"fgColor","rangeEnd":117,"rangeStart":96,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":68,"rangeStart":44,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":130,"rangeStart":128,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":91,"rangeStart":73,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":91,"rangeStart":73,"value":0,"valueType":"int"},{"name":"underline","rangeEnd":130,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":41,"rangeStart":0,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontName","rangeEnd":130,"rangeStart":0,"value":"Menlo","valueType":"string"},{"name":"fontSize","rangeEnd":130,"rangeStart":0,"value":16,"valueType":"double"},{"name":"fontItalic","rangeEnd":96,"rangeStart":91,"value":2,"valueType":"int"},{"name":"fontItalic","rangeEnd":41,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":68,"rangeStart":44,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":73,"rangeStart":68,"value":2,"valueType":"int"},{"name":"fontItalic","rangeEnd":44,"rangeStart":41,"value":2,"valueType":"int"},{"name":"fontWeight","rangeEnd":128,"rangeStart":117,"value":700,"valueType":"int"},{"name":"fontWeight","rangeEnd":117,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fontItalic","rangeEnd":130,"rangeStart":96,"value":0,"valueType":"int"},{"name":"strikethrough","rangeEnd":130,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":73,"rangeStart":68,"value":"(102,23,122,255)","valueType":"color"},{"name":"fontWeight","rangeEnd":130,"rangeStart":128,"value":400,"valueType":"int"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : 1.69503088665044,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : 147.423301235449,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 336,
+                    "mediaStart" : -115,
+                    "mediaDuration" : 336,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "default-text" : "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1561\\cocoasubrtf200\n{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\\f2\\fnil\\fcharset0 Menlo-Italic;\n}\n{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red82\\green0\\blue103;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c0\\c0\\c0;\\cssrgb\\c40000\\c9020\\c47843;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\pardirnatural\\partightenfactor0\n\n\\f0\\fs28 \\cf2 \\ulnone List<Color> \n\\f1\\b \\cf3 colors \n\\f0\\b0 \\cf2 = [\\\n  Colors.\n\\f2\\i \\cf3 red\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 green\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 indigo\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 pinkAccent\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 blue\\\n\n\\f0\\i0 \\cf2 ];\\\n}",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 3,
+                "medias" : [
+                  {
+                    "id" : 6,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "text-rectangle",
+                      "style" : "basic",
+                      "fill-color-blue" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-color-green" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-color-opacity" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-color-red" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "height" : {
+                        "type" : "double",
+                        "defaultValue" : 104.063135901162,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-blue" : {
+                        "type" : "double",
+                        "defaultValue" : 0.56078431372549,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-green" : {
+                        "type" : "double",
+                        "defaultValue" : 0.686274509803922,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-opacity" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-red" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0196078431372549,
+                        "interp" : "linr"
+                      },
+                      "stroke-width" : {
+                        "type" : "double",
+                        "defaultValue" : 2.0,
+                        "interp" : "linr"
+                      },
+                      "tail-x" : {
+                        "type" : "double",
+                        "defaultValue" : -101.916251816883,
+                        "interp" : "linr"
+                      },
+                      "tail-y" : {
+                        "type" : "double",
+                        "defaultValue" : 124.990870276179,
+                        "interp" : "linr"
+                      },
+                      "width" : {
+                        "type" : "double",
+                        "defaultValue" : 578.522106328998,
+                        "interp" : "linr"
+                      },
+                      "word-wrap" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "left",
+                      "stroke-style" : "solid",
+                      "text" : "FlipLoader(\n  loaderBackground: Colors.blueAccent,\n  iconColor: Colors.orangeAccent,\n  icon: Icons.subway,\n  animationType: \"half_flip\", rotateIcon: true,)",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : {
+                          "type" : "double",
+                          "defaultValue" : 0.266666666666667,
+                          "interp" : "linr"
+                        },
+                        "color-green" : {
+                          "type" : "double",
+                          "defaultValue" : 0.231372549019608,
+                          "interp" : "linr"
+                        },
+                        "color-opacity" : {
+                          "type" : "double",
+                          "defaultValue" : 1.0,
+                          "interp" : "linr"
+                        },
+                        "color-red" : {
+                          "type" : "double",
+                          "defaultValue" : 0.184313725490196,
+                          "interp" : "linr"
+                        },
+                        "size" : {
+                          "type" : "double",
+                          "defaultValue" : 64.0,
+                          "interp" : "linr"
+                        },
+                        "tracking" : {
+                          "type" : "double",
+                          "defaultValue" : 0.0,
+                          "interp" : "linr"
+                        },
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : [{"name":"fontItalic","rangeEnd":71,"rangeStart":49,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":124,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fontItalic","rangeEnd":83,"rangeStart":71,"value":2,"valueType":"int"},{"name":"underline","rangeEnd":155,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontItalic","rangeEnd":155,"rangeStart":105,"value":0,"valueType":"int"},{"name":"fontSize","rangeEnd":155,"rangeStart":0,"value":16,"valueType":"double"},{"name":"fgColor","rangeEnd":99,"rangeStart":83,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":71,"rangeStart":49,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":99,"rangeStart":83,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":153,"rangeStart":149,"value":700,"valueType":"int"},{"name":"fgColor","rangeEnd":153,"rangeStart":149,"value":"(0,20,128,255)","valueType":"color"},{"name":"fontWeight","rangeEnd":149,"rangeStart":135,"value":400,"valueType":"int"},{"name":"fontItalic","rangeEnd":105,"rangeStart":99,"value":2,"valueType":"int"},{"name":"fontWeight","rangeEnd":135,"rangeStart":124,"value":700,"valueType":"int"},{"name":"fgColor","rangeEnd":39,"rangeStart":0,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontWeight","rangeEnd":155,"rangeStart":153,"value":400,"valueType":"int"},{"name":"fontItalic","rangeEnd":49,"rangeStart":39,"value":2,"valueType":"int"},{"name":"fontName","rangeEnd":155,"rangeStart":0,"value":"Menlo","valueType":"string"},{"name":"fgColor","rangeEnd":49,"rangeStart":39,"value":"(102,23,122,255)","valueType":"color"},{"name":"fgColor","rangeEnd":105,"rangeStart":99,"value":"(102,23,122,255)","valueType":"color"},{"name":"fgColor","rangeEnd":124,"rangeStart":105,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":83,"rangeStart":71,"value":"(102,23,122,255)","valueType":"color"},{"name":"strikethrough","rangeEnd":155,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontItalic","rangeEnd":39,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":155,"rangeStart":153,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":149,"rangeStart":135,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":135,"rangeStart":124,"value":"(0,127,1,255)","valueType":"color"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -0.304969113349557,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -82.5766987645511,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 336,
+                    "mediaStart" : -115,
+                    "mediaDuration" : 336,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "default-text" : "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1561\\cocoasubrtf200\n{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\\f2\\fnil\\fcharset0 Menlo-Italic;\n}\n{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red82\\green0\\blue103;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c0\\c0\\c0;\\cssrgb\\c40000\\c9020\\c47843;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\pardirnatural\\partightenfactor0\n\n\\f0\\fs28 \\cf2 \\ulnone List<Color> \n\\f1\\b \\cf3 colors \n\\f0\\b0 \\cf2 = [\\\n  Colors.\n\\f2\\i \\cf3 red\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 green\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 indigo\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 pinkAccent\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 blue\\\n\n\\f0\\i0 \\cf2 ];\\\n}",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 4,
+                "medias" : [
+                  {
+                    "id" : 7,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "remix",
+                      "shape" : "text-rectangle",
+                      "style" : "basic",
+                      "fill-color-blue" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-color-green" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-color-opacity" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-color-red" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "height" : {
+                        "type" : "double",
+                        "defaultValue" : 104.063135901162,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-blue" : {
+                        "type" : "double",
+                        "defaultValue" : 0.56078431372549,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-green" : {
+                        "type" : "double",
+                        "defaultValue" : 0.686274509803922,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-opacity" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "stroke-color-red" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0196078431372549,
+                        "interp" : "linr"
+                      },
+                      "stroke-width" : {
+                        "type" : "double",
+                        "defaultValue" : 2.0,
+                        "interp" : "linr"
+                      },
+                      "tail-x" : {
+                        "type" : "double",
+                        "defaultValue" : -101.916251816883,
+                        "interp" : "linr"
+                      },
+                      "tail-y" : {
+                        "type" : "double",
+                        "defaultValue" : 124.990870276179,
+                        "interp" : "linr"
+                      },
+                      "width" : {
+                        "type" : "double",
+                        "defaultValue" : 578.522106328998,
+                        "interp" : "linr"
+                      },
+                      "word-wrap" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "fill-style" : "solid",
+                      "horizontal-alignment" : "left",
+                      "stroke-style" : "solid",
+                      "text" : "FlipLoader(\n  loaderBackground: Colors.green,\n  iconColor: Colors.white,\n  icon: Icons.wifi, animationType: \"half_flip\",\n  shape: \"circle\", rotateIcon: false,),",
+                      "vertical-alignment" : "center",
+                      "font" : {
+                        "color-blue" : {
+                          "type" : "double",
+                          "defaultValue" : 0.266666666666667,
+                          "interp" : "linr"
+                        },
+                        "color-green" : {
+                          "type" : "double",
+                          "defaultValue" : 0.231372549019608,
+                          "interp" : "linr"
+                        },
+                        "color-opacity" : {
+                          "type" : "double",
+                          "defaultValue" : 1.0,
+                          "interp" : "linr"
+                        },
+                        "color-red" : {
+                          "type" : "double",
+                          "defaultValue" : 0.184313725490196,
+                          "interp" : "linr"
+                        },
+                        "size" : {
+                          "type" : "double",
+                          "defaultValue" : 64.0,
+                          "interp" : "linr"
+                        },
+                        "tracking" : {
+                          "type" : "double",
+                          "defaultValue" : 0.0,
+                          "interp" : "linr"
+                        },
+                        "name" : "Montserrat",
+                        "weight" : "Regular"
+                      },
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
+                        "keyframes" : [
+                          {
+                            "time" : 0,
+                            "value" : [{"name":"fontName","rangeEnd":160,"rangeStart":0,"value":"Menlo","valueType":"string"},{"name":"fgColor","rangeEnd":66,"rangeStart":44,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":157,"rangeStart":152,"value":"(0,20,128,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":87,"rangeStart":71,"value":0,"valueType":"int"},{"name":"fontSize","rangeEnd":160,"rangeStart":0,"value":16,"valueType":"double"},{"name":"fgColor","rangeEnd":39,"rangeStart":0,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":44,"rangeStart":39,"value":2,"valueType":"int"},{"name":"fontWeight","rangeEnd":108,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fontItalic","rangeEnd":71,"rangeStart":66,"value":2,"valueType":"int"},{"name":"fgColor","rangeEnd":44,"rangeStart":39,"value":"(102,23,122,255)","valueType":"color"},{"name":"fgColor","rangeEnd":108,"rangeStart":91,"value":"(0,0,0,255)","valueType":"color"},{"name":"fgColor","rangeEnd":91,"rangeStart":87,"value":"(102,23,122,255)","valueType":"color"},{"name":"fgColor","rangeEnd":160,"rangeStart":157,"value":"(0,0,0,255)","valueType":"color"},{"name":"underline","rangeEnd":160,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontItalic","rangeEnd":39,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":160,"rangeStart":157,"value":400,"valueType":"int"},{"name":"fgColor","rangeEnd":87,"rangeStart":71,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":91,"rangeStart":87,"value":2,"valueType":"int"},{"name":"strikethrough","rangeEnd":160,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":119,"rangeStart":108,"value":700,"valueType":"int"},{"name":"fontWeight","rangeEnd":130,"rangeStart":119,"value":400,"valueType":"int"},{"name":"fgColor","rangeEnd":119,"rangeStart":108,"value":"(0,127,1,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":160,"rangeStart":91,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":71,"rangeStart":66,"value":"(102,23,122,255)","valueType":"color"},{"name":"fgColor","rangeEnd":138,"rangeStart":130,"value":"(0,127,1,255)","valueType":"color"},{"name":"fontItalic","rangeEnd":66,"rangeStart":44,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":157,"rangeStart":152,"value":700,"valueType":"int"},{"name":"fgColor","rangeEnd":152,"rangeStart":138,"value":"(0,0,0,255)","valueType":"color"},{"name":"fontWeight","rangeEnd":152,"rangeStart":138,"value":400,"valueType":"int"},{"name":"fontWeight","rangeEnd":138,"rangeStart":130,"value":700,"valueType":"int"},{"name":"fgColor","rangeEnd":130,"rangeStart":119,"value":"(0,0,0,255)","valueType":"color"}],
+                            "duration" : 0
+                          }
+                        ]
+                      }
+                    },
+                    "attributes" : {
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -0.304969113349557,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -312.576698764551,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 336,
+                    "mediaStart" : -115,
+                    "mediaDuration" : 336,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "default-text" : "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1561\\cocoasubrtf200\n{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\\f2\\fnil\\fcharset0 Menlo-Italic;\n}\n{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red82\\green0\\blue103;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c0\\c0\\c0;\\cssrgb\\c40000\\c9020\\c47843;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\pardirnatural\\partightenfactor0\n\n\\f0\\fs28 \\cf2 \\ulnone List<Color> \n\\f1\\b \\cf3 colors \n\\f0\\b0 \\cf2 = [\\\n  Colors.\n\\f2\\i \\cf3 red\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 green\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 indigo\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 pinkAccent\n\\f0\\i0 \\cf2 ,\\\n  Colors.\n\\f2\\i \\cf3 blue\\\n\n\\f0\\i0 \\cf2 ];\\\n}",
+                      "effectApplied" : "none"
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "trackAttributes" : [
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "48"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "48"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "48"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "48"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "48"
+        }
+      }
+    ],
+    "captionAttributes" : {
+      "enabled" : true,
+      "fontName" : "Arial",
+      "fontSize" : 32,
+      "backgroundColor" : [ 0, 0, 0, 204],
+      "foregroundColor" : [ 255, 255, 255, 255],
+      "lang" : "en",
+      "alignment" : 0,
+      "defaultFontSize" : true,
+      "opacity" : 0.5,
+      "backgroundEnabled" : true,
+      "backgroundOnlyAroundText" : true
+    },
+    "backgroundColor" : [ 0, 0, 0, 255],
+    "metadata" : {
+      "RecordingHeight" : "1538",
+      "RecordingWidth" : "950"
+    }
+  },
+  "metadata" : {
+    "ProjectDimensionsChanged" : true,
+    "firstMedia" : true
+  }
+}

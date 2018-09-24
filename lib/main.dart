@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'loaders/color_loader.dart';
-import 'loaders/flip_loader.dart';
+import 'loaders/color_loader_2.dart';
+import 'loaders/color_loader_3.dart';
+import 'loaders/color_loader_4.dart';
+import 'loaders/color_loader_5.dart';
+import 'package:flutter_login_screens/loaders/dot_type.dart';
 
 void main() => runApp(new MyApp());
 
@@ -37,46 +41,78 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
-        child: new Padding(
-          padding: const EdgeInsets.only(top: 100.0),
-          child: new Column(
-            children: <Widget>[
-              Divider(
-                height: 150.0,
-                color: Colors.white,
-              ),
-              ColorLoader(
-                  colors: colors, duration: Duration(milliseconds: 1200)),
-              Divider(
-                height: 100.0,
-                color: Colors.white,
-              ),
-              FlipLoader(
-                  loaderBackground: Colors.red,
-                  iconColor: Colors.white,
-                  icon: Icons.email,
-                  animationType: "full_flip"),
-              Divider(height: 100.0, color: Colors.white),
-              FlipLoader(
-                loaderBackground: Colors.blueAccent,
-                iconColor: Colors.orangeAccent,
-                icon: Icons.subway,
-                animationType: "half_flip",
-                rotateIcon: true,
-              ),
-              Divider(height: 100.0, color: Colors.white),
-              FlipLoader(
-                loaderBackground: Colors.green,
-                iconColor: Colors.white,
-                icon: Icons.wifi,
-                animationType: "half_flip",
-                shape: "circle",
-                rotateIcon: false,
-              ),
-            ],
-          ),
-        ),
-      ),
+        child: new Column(
+          children: <Widget>[
+            Divider(
+              height: 50.0,
+              color: Colors.white,
+            ),
+            ColorLoader(colors: colors, duration: Duration(milliseconds: 1200)),
+            Divider(
+              height: 20.0,
+              color: Colors.white,
+            ),
+            ColorLoader3(
+              radius: 15.0,
+              dotRadius: 6.0,
+            ),
+            ColorLoader3(
+              radius: 20.0,
+              dotRadius: 5.0,
+            ),
+            Divider(height: 20.0, color: Colors.white),
+            ColorLoader2(),
+            Divider(
+              height: 50.0,
+              color: Colors.white,
+            ),
+            ColorLoader4(),
+            Divider(
+              height: 45.0,
+              color: Colors.white,
+            ),
+            ColorLoader4(
+              dotOneColor: Colors.pink,
+              dotTwoColor: Colors.amber,
+              dotThreeColor: Colors.deepOrange,
+              dotType: DotType.square,
+              duration: Duration(milliseconds: 1200),
+            ),
+            Divider(
+              height: 45.0,
+              color: Colors.white,
+            ),
+            ColorLoader4(
+              dotOneColor: Colors.pink,
+              dotTwoColor: Colors.amber,
+              dotThreeColor: Colors.deepOrange,
+              duration: Duration(seconds: 2),
+            ),
+            Divider(
+              height: 50.0,
+              color: Colors.white,
+            ),
+            ColorLoader4(
+              dotOneColor: Colors.indigoAccent,
+              dotTwoColor: Colors.teal,
+              dotThreeColor: Colors.pink,
+              dotType: DotType.diamond,
+              duration: Duration(milliseconds: 1500),
+            ),
+            Divider(
+              height: 45.0,
+              color: Colors.white,
+            ),
+            ColorLoader5(
+                dotOneColor: Colors.redAccent,
+                dotTwoColor: Colors.blueAccent,
+                dotThreeColor: Colors.green,
+                dotType: DotType.circle,
+                dotIcon: Icon(Icons.adjust),
+                duration: Duration(seconds: 1),
+              )
+          ],
+      ),)
     );
   }
 }

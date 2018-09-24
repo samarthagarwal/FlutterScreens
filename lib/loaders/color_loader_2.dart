@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 class ColorLoader2 extends StatefulWidget {
+
+  final Color color1;
+  final Color color2;
+  final Color color3;
+
+  ColorLoader2({this.color1 = Colors.deepOrangeAccent, this.color2 = Colors.yellow, this.color3 = Colors.lightGreen});
+
   @override
   _ColorLoader2State createState() => _ColorLoader2State();
 }
@@ -63,7 +70,7 @@ class _ColorLoader2State extends State<ColorLoader2> with TickerProviderStateMix
           new RotationTransition(
             turns: animation1,
             child: CustomPaint(
-              painter: Arc1Painter(),
+              painter: Arc1Painter(widget.color1),
               child: Container(
                 width: 50.0,
                 height: 50.0,
@@ -72,7 +79,7 @@ class _ColorLoader2State extends State<ColorLoader2> with TickerProviderStateMix
           ), new RotationTransition(
             turns: animation2,
             child: CustomPaint(
-              painter: Arc2Painter(),
+              painter: Arc2Painter(widget.color2),
               child: Container(
                 width: 50.0,
                 height: 50.0,
@@ -81,7 +88,7 @@ class _ColorLoader2State extends State<ColorLoader2> with TickerProviderStateMix
           ), new RotationTransition(
             turns: animation3,
             child: CustomPaint(
-              painter: Arc3Painter(),
+              painter: Arc3Painter(widget.color3),
               child: Container(
                 width: 50.0,
                 height: 50.0,
@@ -92,15 +99,28 @@ class _ColorLoader2State extends State<ColorLoader2> with TickerProviderStateMix
       ),
     );
   }
+
+  @override
+  void dispose() {
+    controller1.dispose();
+    controller2.dispose();
+    controller3.dispose();
+    super.dispose();
+  }
+
 }
 
 class Arc1Painter extends CustomPainter {
+
+  final Color color;
+
+  Arc1Painter(this.color);
 
   @override
   void paint(Canvas canvas, Size size) {
 
     Paint p1 = new Paint()
-      ..color = Colors.deepOrangeAccent
+      ..color = color
       ..strokeWidth = 2.0
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
@@ -121,11 +141,15 @@ class Arc1Painter extends CustomPainter {
 
 class Arc2Painter extends CustomPainter {
 
+  final Color color;
+
+  Arc2Painter(this.color);
+
   @override
   void paint(Canvas canvas, Size size) {
 
     Paint p2 = new Paint()
-      ..color = Colors.yellow
+      ..color = color
       ..strokeWidth = 2.0
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
@@ -146,11 +170,15 @@ class Arc2Painter extends CustomPainter {
 
 class Arc3Painter extends CustomPainter {
 
+  final Color color;
+
+  Arc3Painter(this.color);
+
   @override
   void paint(Canvas canvas, Size size) {
 
     Paint p3 = new Paint()
-      ..color = Colors.lightGreen
+      ..color = color
       ..strokeWidth = 1.5
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;

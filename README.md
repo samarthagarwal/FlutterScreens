@@ -2,35 +2,46 @@
 
 A collection of Login Screens, Buttons and Loaders with attractive UIs, built with Flutter, ready to be used in your applications.
 
-###### Last Update: Added Loaders
+###### Last Update: Added Loaders (`ColorLoader4` and `ColorLoader5`)
 
 ## Screenshots And Usage
 
 ## Loaders
 
-![Screenshots on iOS](./screenshots/loaders_1.gif)
+![Screenshots on iOS](./screenshots/loaders.gif)
 
-`ColorLoader` requires `colors` and `duration` as mandatory parameters. `FlipLoader` and `FlipLoader2` do not require any parameters.
+#### ColorLoaders
 
-#### Color Loader
-```
-List<Color> colors = [
-    Colors.red,
-    Colors.green,
-    Colors.indigo,
-    Colors.pinkAccent,
-    Colors.blue
-];
- 
+| ```ColorLoader(
+        colors: colors, 
+        duration: Duration(milliseconds: 1200)
+    )``` | ![Screenshot](./screenshots/color_loader.gif) |
+| ```ColorLoader2(
+        color1: Colors.redAccent, 
+        color2: Colors.deepPurple, 
+        color3: Colors.green,
+    )``` | ![Screenshot](./screenshots/color_loader_2.gif) |
+| ```ColorLoader3(
+      radius: 15.0,
+      dotRadius: 6.0,
+    )``` | ![Screenshot](./screenshots/color_loader_3.gif) |
+| ```ColorLoader4(
+        dotOneColor: Colors.pink,
+        dotTwoColor: Colors.amber,
+        dotThreeColor: Colors.deepOrange,
+        dotType: DotType.square,
+        duration: Duration(milliseconds: 1200),
+      ),``` | ![Screenshot](./screenshots/color_loader_4.gif) |
+| ```ColorLoader5(
+        dotOneColor: Colors.redAccent,
+        dotTwoColor: Colors.blueAccent,
+        dotThreeColor: Colors.green,
+        dotType: DotType.circle,
+        dotIcon: Icon(Icons.adjust),
+        duration: Duration(seconds: 1),
+    )``` | ![Screenshot](./screenshots/color_loader_5.gif) |
 
-//Use in widget tree
-ColorLoader(
-   colors: colors,
-   duration: Duration(milliseconds: 1200)
-),
-```
-
-#### Flip Loader
+#### FlipLoaders
 _Example #1_
 ```
 FlipLoader(
@@ -115,41 +126,41 @@ ___
 
 ##### Usage
 
-`Container(
-    child: LoginScreen1(
-        primaryColor: Color(0xFF4aa0d5),
-        backgroundColor: Colors.white,
-        backgroundImage: new AssetImage("assets/images/full-bloom.png"),
+```Container(
+	child: LoginScreen1(
+	primaryColor: Color(0xFF4aa0d5),
+	backgroundColor: Colors.white,
+	backgroundImage: new AssetImage("assets/images/full-bloom.png"),
     ),
- )`
- 
+)```
+
  ### Login Screen 2
- 
+
  ![Screenshots on Android and iOS](./screenshots/login_screen_2.png)
- 
+
  ##### Usage
- 
- `Container(
-     child: LoginScreen2(
-       backgroundColor1: Color(0xFF444152),
-       backgroundColor2: Color(0xFF6f6c7d),
-       highlightColor: Color(0xfff65aa3),
-       foregroundColor: Colors.white,
-       logo: new AssetImage("assets/images/full-bloom.png"),
-     ),
-  )`
-  
+
+ ```Container(
+ 	child: LoginScreen2(
+        backgroundColor1: Color(0xFF444152),
+        backgroundColor2: Color(0xFF6f6c7d),
+        highlightColor: Color(0xfff65aa3),
+        foregroundColor: Colors.white,
+        logo: new AssetImage("assets/images/full-bloom.png"),
+        ),
+    )```
+
    ### Login Screen 3
-   
+
    ![Screenshots on Android and iOS](./screenshots/login_screen_3.gif)
-   
+
    ##### Usage
-   
-   `Container(
-       child: LoginScreen3(),
-    )`
-  
+
+   ```Container(
+   		child: LoginScreen3(),
+   )```
+
   ## Contribution and Donation
-  
+
   Feel free to contribute. If you like the project and want to donate, [click here](https://www.paypal.me/samarthagarwal).
 
