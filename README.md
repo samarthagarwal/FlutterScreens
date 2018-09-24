@@ -12,34 +12,9 @@ A collection of Login Screens, Buttons and Loaders with attractive UIs, built wi
 
 #### ColorLoaders
 
-| ```ColorLoader(
-        colors: colors, 
-        duration: Duration(milliseconds: 1200)
-    )``` | ![Screenshot](./screenshots/color_loader.gif) |
-| ```ColorLoader2(
-        color1: Colors.redAccent, 
-        color2: Colors.deepPurple, 
-        color3: Colors.green,
-    )``` | ![Screenshot](./screenshots/color_loader_2.gif) |
-| ```ColorLoader3(
-      radius: 15.0,
-      dotRadius: 6.0,
-    )``` | ![Screenshot](./screenshots/color_loader_3.gif) |
-| ```ColorLoader4(
-        dotOneColor: Colors.pink,
-        dotTwoColor: Colors.amber,
-        dotThreeColor: Colors.deepOrange,
-        dotType: DotType.square,
-        duration: Duration(milliseconds: 1200),
-      ),``` | ![Screenshot](./screenshots/color_loader_4.gif) |
-| ```ColorLoader5(
-        dotOneColor: Colors.redAccent,
-        dotTwoColor: Colors.blueAccent,
-        dotThreeColor: Colors.green,
-        dotType: DotType.circle,
-        dotIcon: Icon(Icons.adjust),
-        duration: Duration(seconds: 1),
-    )``` | ![Screenshot](./screenshots/color_loader_5.gif) |
+| ![Screenshot](./screenshots/color_loader.gif) | ![Screenshot](./screenshots/color_loader_2.gif) | ![Screenshot](./screenshots/color_loader_3.gif) |
+|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+| ![Screenshot](./screenshots/color_loader_4.gif) | ![Screenshot](./screenshots/color_loader_5.gif) |                                               |
 
 #### FlipLoaders
 _Example #1_
@@ -164,3 +139,5 @@ ___
 
   Feel free to contribute. If you like the project and want to donate, [click here](https://www.paypal.me/samarthagarwal).
 
+
+```
