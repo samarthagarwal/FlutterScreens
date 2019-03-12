@@ -1,10 +1,14 @@
-# Flutter Login Screens
+# Flutter Screens
 
-A collection of Login Screens, Buttons and Loaders with attractive UIs, built with Flutter, ready to be used in your applications.
+A collection of Login Screens, Buttons, Loaders and Widgets with attractive UIs, built with Flutter, ready to be used in your applications.
 
-###### Last Update: Added Loaders (`ColorLoader4` and `ColorLoader5`)
+###### Last Update: Added Rating Widget
 
 ## Screenshots And Usage
+
+## Rating
+
+![Screenshots on iOS](./screenshots/rating.gif)
 
 ## Loaders
 
