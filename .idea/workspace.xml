@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0159c001-1a27-4f70-926c-30cd81d61e07" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/buttons/simple_round_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/buttons/simple_round_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/buttons/simple_round_icon_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/buttons/simple_round_icon_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/buttons/simple_round_only_icon_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/buttons/simple_round_only_icon_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,20 +19,7 @@
     <favorites_list name="flutter_login_screens" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.dart" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="240" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,7 +34,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="1521" />
     <option name="height" value="1047" />
@@ -70,22 +52,6 @@
             <path>
               <item name="flutter_login_screens" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_login_screens" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_login_screens" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_login_screens" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_login_screens" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_login_screens" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="buttons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_login_screens" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_login_screens" type="462c0819:PsiDirectoryNode" />
-              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,8 +214,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1521" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -259,15 +224,15 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5023665" side_tool="true" weight="0.3795045" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32552955" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49763355" visible="true" weight="0.3792325" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49763355" weight="0.3792325" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32849163" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3363431" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3329609" />
       <window_info anchor="right" id="Flutter Outline" order="3" />
       <window_info anchor="bottom" id="Logcat" order="7" />
       <window_info id="Captures" order="2" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22176592" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -553,21 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="739">
-            <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/login_screen_3.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -657,10 +607,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2767">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="739">
+            <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="240" selection-end-column="16" />
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
