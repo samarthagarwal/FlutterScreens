@@ -6,6 +6,10 @@ A collection of Login Screens, Buttons, Loaders and Widgets with attractive UIs,
 
 ## Screenshots And Usage
 
+## SlideListView
+
+![Screenshots on iOS](./screenshots/slide_list_view.gif)
+
 ## Rating
 
 ![Screenshots on iOS](./screenshots/rating.gif)
