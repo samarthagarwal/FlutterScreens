@@ -89,7 +89,7 @@ class SimpleRoundIconButton extends StatelessWidget {
 
                 ],
               ),
-              onPressed: () => onPressed,
+              onPressed: onPressed,
             ),
           ),
         ],

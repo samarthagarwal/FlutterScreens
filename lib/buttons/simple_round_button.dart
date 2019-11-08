@@ -36,7 +36,7 @@ class SimpleRoundButton extends StatelessWidget {
                   ),
                 ],
               ),
-              onPressed: () => onPressed,
+              onPressed: onPressed,
             ),
           ),
         ],
