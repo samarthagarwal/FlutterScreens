@@ -2,11 +2,13 @@
 
 A collection of Login Screens, Buttons, Loaders and Widgets with attractive UIs, built with Flutter, ready to be used in your applications.
 
-###### Last Update: Added Rating Widget
+###### Last Update: Added SlideListView Widget
 
 ## Screenshots And Usage
 
 ## SlideListView
+
+A widget that can be used to present two different views that can be toggled using a Floating Action Button. The views toggle with a nice cube-rotation animation.
 
 ![Screenshots on iOS](./screenshots/slide_list_view.gif)
 
