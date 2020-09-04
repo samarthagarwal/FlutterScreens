@@ -17,7 +17,6 @@ class ButtonExample extends StatelessWidget {
             buttonText: Text("LOGIN", style: TextStyle(
                 color: Colors.white
             ),),
-            textColor: Colors.white,
           ),
 
           SimpleRoundIconButton(
@@ -25,7 +24,6 @@ class ButtonExample extends StatelessWidget {
             buttonText: Text("SEND EMAIL", style: TextStyle(
                 color: Colors.white
             ),),
-            textColor: Colors.white,
             icon: Icon(Icons.email),
           ),
 
@@ -34,7 +32,6 @@ class ButtonExample extends StatelessWidget {
             buttonText: Text("LISTEN TO MUSIC", style: TextStyle(
                 color: Colors.white
             ),),
-            textColor: Colors.white,
             icon: Icon(Icons.headset_mic),
             iconAlignment: Alignment.centerRight,
           ),
@@ -44,7 +41,6 @@ class ButtonExample extends StatelessWidget {
             buttonText: Text("SHARE ON SOCIAL", style: TextStyle(
                 color: Colors.white
             ),),
-            textColor: Colors.white,
             icon: Icon(Icons.share),
           ),
 
@@ -101,7 +97,6 @@ class ButtonExample extends StatelessWidget {
                   buttonText: Text("PLAY", style: TextStyle(
                       color: Colors.white
                   ),),
-                  textColor: Colors.white,
                   icon: Icon(Icons.play_arrow),
                   iconAlignment: Alignment.centerRight,
                 ),
@@ -114,7 +109,6 @@ class ButtonExample extends StatelessWidget {
                   buttonText: Text("OK", style: TextStyle(
                       color: Colors.green
                   ),),
-                  textColor: Colors.white,
                 ),
               ),
             ],
