@@ -103,7 +103,7 @@ SimpleRoundOnlyIconButton(
 )
 ```
 ___
-##Login Screens
+## Login Screens
 
 ### Login Screen 1
 
@@ -147,7 +147,7 @@ Container(
 
    ```
    Container(
-   		child: LoginScreen3(),
+   	child: LoginScreen3(),
    )
    ```
 
