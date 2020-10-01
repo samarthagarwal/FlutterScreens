@@ -104,13 +104,13 @@ class _LoginScreen3State extends State<LoginScreen3>
 
     anim_0To1.addListener(() {
       scrollPercent = controller_0To1.value / numCards;
-//      print(scrollPercent);
+      print(scrollPercent);
       setState(() {});
     });
 
     anim_minus1To0.addListener(() {
       scrollPercent = controller_minus1To0.value / numCards;
-//      print(scrollPercent);
+      print(scrollPercent);
       setState(() {});
     });
     */
