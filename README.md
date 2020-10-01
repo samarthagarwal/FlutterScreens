@@ -2,6 +2,9 @@
 
 A collection of Login Screens, Buttons, Loaders and Widgets with attractive UIs, built with Flutter, ready to be used in your applications.
 
+##Widgets
+A software widget is a relatively simple and easy-to-use software application or component made for one or more different software platforms. A desk accessory or applet is an example of a simple, stand-alone user interface, in contrast with a more complex application such as a spreadsheet or word processor.
+
 ###### Last Update: Added SlideListView Widget
 
 ## Screenshots And Usage
