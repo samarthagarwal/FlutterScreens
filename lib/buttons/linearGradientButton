@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+class SimpleRoundButton extends StatelessWidget {
+
+  final List<Color> backgroundColors;
+  final Text buttonText;
+  final Function onTap;
+
+  SimpleRoundButton({
+    this.backgroundColors,
+    this.buttonText,
+    this.onTap
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(50.0),
+          gradient: LinearGradient(
+              colors: backgroundColors
+          )
+        ),
+        height: 60.0,
+        width: MediaQuery.of(context).size.width*0.7,
+        child: Center(child: buttonText),
+      ),
+    );
+  }
+}
