@@ -15,12 +15,12 @@ class ColorLoader2 extends StatefulWidget {
 
 class _ColorLoader2State extends State<ColorLoader2> with TickerProviderStateMixin {
 
-  Animation<double> animation1;
-  Animation<double> animation2;
-  Animation<double> animation3;
-  AnimationController controller1;
-  AnimationController controller2;
-  AnimationController controller3;
+  late Animation<double> animation1;
+  late Animation<double> animation2;
+  late Animation<double> animation3;
+  late AnimationController controller1;
+  late AnimationController controller2;
+  late AnimationController controller3;
 
   @override
   void initState() {

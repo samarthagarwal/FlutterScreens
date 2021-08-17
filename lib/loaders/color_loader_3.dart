@@ -13,13 +13,13 @@ class ColorLoader3 extends StatefulWidget {
 
 class _ColorLoader3State extends State<ColorLoader3>
     with SingleTickerProviderStateMixin {
-  Animation<double> animation_rotation;
-  Animation<double> animation_radius_in;
-  Animation<double> animation_radius_out;
-  AnimationController controller;
+  late Animation<double> animation_rotation;
+  late Animation<double> animation_radius_in;
+  late Animation<double> animation_radius_out;
+  late AnimationController controller;
 
-  double radius;
-  double dotRadius;
+  late double radius;
+  late double dotRadius;
 
   @override
   void initState() {
@@ -193,8 +193,8 @@ class _ColorLoader3State extends State<ColorLoader3>
 }
 
 class Dot extends StatelessWidget {
-  final double radius;
-  final Color color;
+  final double? radius;
+  final Color? color;
 
   Dot({this.radius, this.color});
 

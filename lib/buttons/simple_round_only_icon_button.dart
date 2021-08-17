@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class SimpleRoundOnlyIconButton extends StatelessWidget {
   final Color backgroundColor;
-  final Icon icon;
-  final Color iconColor;
+  final Icon? icon;
+  final Color? iconColor;
   final Alignment iconAlignment;
-  final Function onPressed;
+  final Function? onPressed;
 
   SimpleRoundOnlyIconButton(
       {this.backgroundColor = Colors.redAccent,
@@ -33,11 +33,14 @@ class SimpleRoundOnlyIconButton extends StatelessWidget {
       child: new Row(
         children: <Widget>[
           new Expanded(
-            child: FlatButton(
-              shape: new RoundedRectangleBorder(
-                  borderRadius: new BorderRadius.circular(30.0)),
-              splashColor: this.backgroundColor,
-              color: this.backgroundColor,
+            child: TextButton(
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(30.0))),
+                overlayColor: MaterialStateProperty.all(this.backgroundColor),
+                backgroundColor:
+                    MaterialStateProperty.all(this.backgroundColor),
+              ),
               child: new Row(
                 mainAxisAlignment: getMainAxisAlignment(),
                 children: <Widget>[
@@ -47,15 +50,23 @@ class SimpleRoundOnlyIconButton extends StatelessWidget {
                           child: new Container(
                             padding: const EdgeInsets.only(
                                 left: 5.0, right: 5.0, top: 10.0, bottom: 10.0),
-                            child: FlatButton(
-                              shape: new RoundedRectangleBorder(
-                                  borderRadius:
-                                      new BorderRadius.circular(28.0)),
-                              splashColor: backgroundColor,
-                              color: backgroundColor,
+                            child: TextButton(
+                              style: ButtonStyle(
+                                shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(28.0),
+                                  ),
+                                ),
+                                overlayColor:
+                                    MaterialStateProperty.all(backgroundColor),
+                                backgroundColor:
+                                    MaterialStateProperty.all(backgroundColor),
+                              ),
                               child: Icon(
-                                icon.icon,
-                                color: iconColor == null ? Colors.white : iconColor,
+                                icon!.icon,
+                                color: iconColor == null
+                                    ? Colors.white
+                                    : iconColor,
                               ),
                               onPressed: () => {},
                             ),
@@ -68,15 +79,23 @@ class SimpleRoundOnlyIconButton extends StatelessWidget {
                           child: new Container(
                             padding: const EdgeInsets.only(
                                 left: 5.0, right: 5.0, top: 10.0, bottom: 10.0),
-                            child: FlatButton(
-                              shape: new RoundedRectangleBorder(
-                                  borderRadius:
-                                      new BorderRadius.circular(28.0)),
-                              splashColor: Colors.white,
-                              color: Colors.white,
+                            child: TextButton(
+                              style: ButtonStyle(
+                                shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(28.0),
+                                  ),
+                                ),
+                                overlayColor:
+                                    MaterialStateProperty.all(Colors.white),
+                                backgroundColor:
+                                    MaterialStateProperty.all(Colors.white),
+                              ),
                               child: Icon(
-                                icon.icon,
-                                color: iconColor == null ? Colors.white : iconColor,
+                                icon!.icon,
+                                color: iconColor == null
+                                    ? Colors.white
+                                    : iconColor,
                               ),
                               onPressed: () => {},
                             ),
@@ -102,7 +121,7 @@ class SimpleRoundOnlyIconButton extends StatelessWidget {
                               splashColor: Colors.white,
                               color: Colors.white,
                               child: Icon(
-                                icon.icon,
+                                icon!.icon,
                                 color: this.iconColor,
                               ),
                               onPressed: () => {},
@@ -112,7 +131,7 @@ class SimpleRoundOnlyIconButton extends StatelessWidget {
                       : Container()
                 ],
               ),
-              onPressed: onPressed,
+              onPressed: () => onPressed!(),
             ),
           ),
         ],

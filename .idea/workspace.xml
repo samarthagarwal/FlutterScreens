@@ -1,330 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="10" />
-  </component>
-  <component name="CMakeSettings">
-    <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
-    </configurations>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0159c001-1a27-4f70-926c-30cd81d61e07" name="Default" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="d9dd8c86-ae94-465a-84c6-7f2c70ac30ad" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="flutter_login_screens" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Dart File" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>white</find>
-      <find>button</find>
-      <find>LOGIN</find>
-      <find>Icon</find>
-      <find>_controller</find>
-      <find>login</find>
-      <find>print</find>
-      <find>begin</find>
-      <find>pi</find>
-      <find>controller.value</find>
-      <find>widget.</find>
-      <find>radius/2</find>
-      <find>radius / 4 +</find>
-      <find>dotRadius/2</find>
-      <find>radius/dotRadius +</find>
-      <find>radius *</find>
-      <find>2 * (radius-dotRadius)</find>
-      <find>dispose</find>
-      <find>dispo</find>
-      <find>FontAwesomeIcons.solidStar</find>
-      <find>FontAwesomeIcons.star</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>controller.value</replace>
-      <replace>0.0</replace>
-      <replace>radius/4</replace>
-      <replace>radius / 4</replace>
-      <replace>radius/2</replace>
-      <replace>+</replace>
-      <replace>-</replace>
-      <replace>radius/2 - dotRadius</replace>
-      <replace>dotRadius/2</replace>
-      <replace>dotRadius/4</replace>
-      <replace>2 * (radius-dotRadius) *</replace>
-      <replace>radius</replace>
-      <replace>Icons.</replace>
-      <replace>Icons.star_border</replace>
-    </replaceStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Samarth Agarwal &lt;samarthagarwal@live.com&gt;" />
-      </list>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1iK0di3CPi824d6lH9xU113iunA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectReloadState">
-    <option name="STATE" value="1" />
+  <component name="ProjectId" id="1wrYOONdPMP8UADC5CfpexEmxgN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537811019205" />
-    <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Kotlin/Gidget" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/misc" />
-      <recent name="C:\Users\Samarth\Desktop\Projects\flutter_login_screens\lib\loaders" />
-      <recent name="$PROJECT_DIR$/lib/buttons" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration default="true" type="AndroidJUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType">
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <Java />
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sampled (Java)" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType">
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <Java />
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sampled (Java)" />
-      </Profilers>
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" singleton="false">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0159c001-1a27-4f70-926c-30cd81d61e07" name="Default" comment="" />
-      <created>1531561389514</created>
+      <changelist id="d9dd8c86-ae94-465a-84c6-7f2c70ac30ad" name="Default Changelist" comment="" />
+      <created>1629218150354</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1531561389514</updated>
+      <updated>1629218150354</updated>
     </task>
-    <task id="LOCAL-00001" summary="Login Screen 3 Added">
-      <created>1532274318766</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1532274318766</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Login Screen 3 Added">
-      <created>1532274502966</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1532274502966</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Login Screen 3 Added">
-      <created>1532274576533</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1532274576533</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Login Screen 3 Updated to use PageView">
-      <created>1533849994514</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1533849994514</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Login Screen 3 Updated to use PageView">
-      <created>1533850102253</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1533850102253</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added Buttons&#10;- Simple Round Button&#10;- Simple Round Icon Button&#10;- Simple Round Only Icon Button">
-      <created>1534115504798</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1534115504798</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Added Buttons&#10;- Simple Round Button&#10;- Simple Round Icon Button&#10;- Simple Round Only Icon Button">
-      <created>1534115523966</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1534115523966</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added Buttons&#10;- Simple Round Button&#10;- Simple Round Icon Button&#10;- Simple Round Only Icon Button">
-      <created>1534115590265</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1534115590265</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added Loaders&#10;- ColorLoader&#10;- FlipLoader&#10;- FlipLoader2">
-      <created>1534845237544</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1534845237544</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Added Loaders&#10;- ColorLoader&#10;- FlipLoader&#10;- FlipLoader2">
-      <created>1534845418806</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1534845418806</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Added Loaders&#10;- ColorLoader&#10;- ColorLoader2&#10;&#10;Restructured the FlipLoader to accept params&#10;- FlipLoader&#10;&#10;Removed&#10;- FlipLoader2&#10;- FlipLoader3">
-      <created>1534912707712</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1534912707712</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Login Screen 3 Added" />
-    <MESSAGE value="Login Screen 3 Updated to use PageView" />
-    <MESSAGE value="Added Buttons&#10;- Simple Round Button&#10;- Simple Round Icon Button&#10;- Simple Round Only Icon Button" />
-    <MESSAGE value="Added Loaders&#10;- ColorLoader&#10;- FlipLoader&#10;- FlipLoader2" />
-    <MESSAGE value="Added Loaders&#10;- ColorLoader&#10;- ColorLoader2&#10;&#10;Restructured the FlipLoader to accept params&#10;- FlipLoader&#10;&#10;Removed&#10;- FlipLoader2&#10;- FlipLoader3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Loaders&#10;- ColorLoader&#10;- ColorLoader2&#10;&#10;Restructured the FlipLoader to accept params&#10;- FlipLoader&#10;&#10;Removed&#10;- FlipLoader2&#10;- FlipLoader3" />
   </component>
 </project>

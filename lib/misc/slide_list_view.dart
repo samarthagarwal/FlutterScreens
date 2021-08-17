@@ -3,8 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class SlideListView extends StatefulWidget {
-  final Widget view1;
-  final Widget view2;
+  final Widget? view1;
+  final Widget? view2;
   final String defaultView;
   final Duration duration;
   final bool enabledSwipe;
@@ -31,7 +31,7 @@ class SlideListView extends StatefulWidget {
 
 class _SlideListViewState extends State<SlideListView>
     with SingleTickerProviderStateMixin {
-  AnimationController _animationController;
+  late AnimationController _animationController;
   PageController _mainPageController = PageController();
   double currentPageValue = 0.0;
   double _viewportFraction = 0.95;
@@ -46,7 +46,7 @@ class _SlideListViewState extends State<SlideListView>
     _mainPageController = PageController(initialPage: 0, viewportFraction: 1.0);
     _mainPageController.addListener(() {
       setState(() {
-        currentPageValue = _mainPageController.page;
+        currentPageValue = _mainPageController.page!;
       });
     });
     _animationController = AnimationController(

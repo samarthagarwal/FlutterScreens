@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_screens/misc/slide_list_view.dart';
-
 import 'login_screen_1.dart';
+import 'misc/slide_list_view.dart';
 
 void main() => runApp(new MyApp());
 
@@ -33,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: SlideListView(
           view1: buildPage(Colors.red, "Page 1"),
           view2: buildPage(Colors.green, "Page 2"),
-          floatingActionButtonColor: Colors.yellow[800],
+          floatingActionButtonColor: Colors.yellow[800]!,
           floatingActionButtonIcon: AnimatedIcons.view_list,
           showFloatingActionButton: true,
           defaultView: "slides",

@@ -8,8 +8,8 @@ class Graph extends StatefulWidget {
 }
 
 class _GraphState extends State<Graph> with SingleTickerProviderStateMixin {
-  Animation<double> animation;
-  AnimationController controller;
+  late Animation<double> animation;
+  late AnimationController controller;
 
   @override
   void initState() {

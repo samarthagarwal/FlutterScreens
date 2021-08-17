@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class LoginScreen2 extends StatelessWidget {
-  final Color backgroundColor1;
-  final Color backgroundColor2;
-  final Color highlightColor;
-  final Color foregroundColor;
-  final AssetImage logo;
+  final Color? backgroundColor1;
+  final Color? backgroundColor2;
+  final Color? highlightColor;
+  final Color? foregroundColor;
+  final AssetImage? logo;
 
-  LoginScreen2({Key k, this.backgroundColor1, this.backgroundColor2, this.highlightColor, this.foregroundColor, this.logo});
+  LoginScreen2({Key? k, this.backgroundColor1, this.backgroundColor2, this.highlightColor, this.foregroundColor, this.logo});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class LoginScreen2 extends StatelessWidget {
           gradient: new LinearGradient(
             begin: Alignment.centerLeft,
             end: new Alignment(1.0, 0.0), // 10% of the width, so there are ten blinds.
-            colors: [this.backgroundColor1, this.backgroundColor2], // whitish to gray
+            colors: [this.backgroundColor1!, this.backgroundColor2!], // whitish to gray
             tileMode: TileMode.repeated, // repeats the gradient over the canvas
           ),
         ),
@@ -46,7 +46,7 @@ class LoginScreen2 extends StatelessWidget {
                       ),
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: this.foregroundColor,
+                          color: this.foregroundColor!,
                           width: 1.0,
                         ),
                         shape: BoxShape.circle,
@@ -71,7 +71,7 @@ class LoginScreen2 extends StatelessWidget {
               decoration: BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
-                      color: this.foregroundColor,
+                      color: this.foregroundColor!,
                       width: 0.5,
                       style: BorderStyle.solid),
                 ),
@@ -109,7 +109,7 @@ class LoginScreen2 extends StatelessWidget {
               decoration: BoxDecoration(
                 border: Border(
                   bottom: BorderSide(
-                      color: this.foregroundColor,
+                      color: this.foregroundColor!,
                       width: 0.5,
                       style: BorderStyle.solid),
                 ),
@@ -177,7 +177,7 @@ class LoginScreen2 extends StatelessWidget {
                       onPressed: () => {},
                       child: Text(
                         "Forgot your password?",
-                        style: TextStyle(color: this.foregroundColor.withOpacity(0.5)),
+                        style: TextStyle(color: this.foregroundColor!.withOpacity(0.5)),
                       ),
                     ),
                   ),
@@ -201,7 +201,7 @@ class LoginScreen2 extends StatelessWidget {
                       onPressed: () => {},
                       child: Text(
                         "Don't have an account? Create One",
-                        style: TextStyle(color: this.foregroundColor.withOpacity(0.5)),
+                        style: TextStyle(color: this.foregroundColor!.withOpacity(0.5)),
                       ),
                     ),
                   ),

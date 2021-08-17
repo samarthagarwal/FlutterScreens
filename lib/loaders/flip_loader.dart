@@ -19,16 +19,16 @@ class FlipLoader extends StatefulWidget {
 class _FlipLoaderState extends State<FlipLoader>
     with SingleTickerProviderStateMixin {
   
-  AnimationController controller;
-  Animation<double> rotationHorizontal;
-  Animation<double> rotationVertical;
-  Color loaderColor;
-  Color iconColor;
-  IconData icon;
-  Widget loaderIconChild;
-  String animationType;
-  String shape;
-  bool rotateIcon;
+  late AnimationController controller;
+  late Animation<double> rotationHorizontal;
+  late Animation<double> rotationVertical;
+  late Color loaderColor;
+  late Color iconColor;
+  late IconData icon;
+  late Widget loaderIconChild;
+  late String animationType;
+  late String shape;
+  late bool rotateIcon;
 
   _FlipLoaderState(this.loaderColor, this.iconColor, this.icon, this.animationType, this.shape, this.rotateIcon);
 
@@ -118,7 +118,7 @@ class _FlipLoaderState extends State<FlipLoader>
   Widget buildHalfFlipper(BuildContext context) {
     return new AnimatedBuilder(
       animation: controller,
-      builder: (BuildContext context, Widget child) {
+      builder: (BuildContext context, Widget? child) {
         return Container(
           child: new Transform(
             transform: Matrix4.identity()
@@ -160,7 +160,7 @@ class _FlipLoaderState extends State<FlipLoader>
   Widget buildFullFlipper(BuildContext context) {
     return new AnimatedBuilder(
       animation: controller,
-      builder: (BuildContext context, Widget child) {
+      builder: (BuildContext context, Widget? child) {
         return Container(
           child: new Transform(
             transform: Matrix4.identity()

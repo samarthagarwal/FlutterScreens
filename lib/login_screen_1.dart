@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 
 class LoginScreen1 extends StatelessWidget {
 
-  final Color primaryColor;
-  final Color backgroundColor;
-  final AssetImage backgroundImage;
+  final Color? primaryColor;
+  final Color? backgroundColor;
+  final AssetImage? backgroundImage;
 
   LoginScreen1({
-    Key key,
+    Key? key,
     this.primaryColor, this.backgroundColor, this.backgroundImage
   });
 
@@ -31,7 +31,7 @@ class LoginScreen1 extends StatelessWidget {
                 child: Container(
                   decoration: BoxDecoration(
                     image: new DecorationImage(
-                      image: this.backgroundImage,
+                      image: this.backgroundImage!,
                       fit: BoxFit.cover,
                     ),
                   ),
