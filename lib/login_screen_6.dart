@@ -1,17 +1,17 @@
 import "package:flutter/material.dart";
 
-class LoginScreen3 extends StatefulWidget {
-  final Function onLoginClick;
-  final Function navigatePage;
-  LoginScreen3({
-    @required this.onLoginClick,
-    @required this.navigatePage,
+class LoginScreen6 extends StatefulWidget {
+  final void Function() onLoginClick;
+  final void Function() navigatePage;
+  LoginScreen6({
+    required this.onLoginClick,
+    required this.navigatePage,
   });
   @override
-  _LoginScreen3State createState() => _LoginScreen3State();
+  _LoginScreen6State createState() => _LoginScreen6State();
 }
 
-class _LoginScreen3State extends State<LoginScreen3> {
+class _LoginScreen6State extends State<LoginScreen6> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   @override
@@ -25,8 +25,7 @@ class _LoginScreen3State extends State<LoginScreen3> {
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(
-                      "assets/images/background_image_one_signin.png"),
+                  image: AssetImage("assets/images/background_image_one_signin.png"),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -38,27 +37,20 @@ class _LoginScreen3State extends State<LoginScreen3> {
                   margin: EdgeInsets.only(left: 40, right: 8, top: 155),
                   child: Text(
                     "Welcome\nBack",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold),
+                    style: TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: Container(
-                    margin: EdgeInsets.only(
-                        left: 30,
-                        right: 30,
-                        top: MediaQuery.of(context).size.height * 0.24),
+                    margin: EdgeInsets.only(left: 30, right: 30, top: MediaQuery.of(context).size.height * 0.24),
                     width: double.infinity,
                     child: TextField(
-                      controller: widget.emailController,
+                      controller: emailController,
                       style: TextStyle(color: Color.fromRGBO(41, 41, 41, 1)),
                       decoration: InputDecoration(
                         hintText: "Email",
-                        hintStyle:
-                            TextStyle(color: Color.fromRGBO(121, 121, 121, 1)),
+                        hintStyle: TextStyle(color: Color.fromRGBO(121, 121, 121, 1)),
                       ),
                       keyboardType: TextInputType.emailAddress,
                     ),
@@ -70,12 +62,11 @@ class _LoginScreen3State extends State<LoginScreen3> {
                     margin: EdgeInsets.only(left: 30, right: 30),
                     width: double.infinity,
                     child: TextField(
-                      controller: widget.passwordController,
+                      controller: passwordController,
                       style: TextStyle(color: Color.fromRGBO(41, 41, 41, 1)),
                       decoration: InputDecoration(
                         hintText: "Password",
-                        hintStyle:
-                            TextStyle(color: Color.fromRGBO(121, 121, 121, 1)),
+                        hintStyle: TextStyle(color: Color.fromRGBO(121, 121, 121, 1)),
                       ),
                       keyboardType: TextInputType.emailAddress,
                       obscureText: true,

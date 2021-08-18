@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class LoginScreen1 extends StatefulWidget {
+class LoginScreen5 extends StatefulWidget {
   final String avatarImage;
-  final Function onLoginClick;
-  final Function googleSignIn;
-  final Function navigatePage;
-  LoginScreen1({
-    @required this.avatarImage,
-    @required this.onLoginClick,
-    @required this.googleSignIn,
-    @required this.navigatePage,
+  final void Function() onLoginClick;
+  final void Function() googleSignIn;
+  final void Function() navigatePage;
+  LoginScreen5({
+    required this.avatarImage,
+    required this.onLoginClick,
+    required this.googleSignIn,
+    required this.navigatePage,
   });
   @override
-  _LoginScreen1State createState() => _LoginScreen1State();
+  _LoginScreen5State createState() => _LoginScreen5State();
 }
 
-class _LoginScreen1State extends State<LoginScreen1> {
+class _LoginScreen5State extends State<LoginScreen5> {
   TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController;
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +29,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
             width: double.infinity,
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage('assets/images/signin_page_background.png'),
-                  fit: BoxFit.fill),
+              image: DecorationImage(image: AssetImage('assets/images/signin_page_background.png'), fit: BoxFit.fill),
             ),
           ),
           Container(
@@ -50,10 +48,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
                 children: [
                   Text(
                     "Welcome Back",
-                    style: TextStyle(
-                        fontSize: 17,
-                        color: Color.fromRGBO(147, 148, 184, 1),
-                        fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 17, color: Color.fromRGBO(147, 148, 184, 1), fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 30),
                   Container(
@@ -62,9 +57,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
                       controller: emailController,
                       cursorColor: Colors.white,
                       decoration: InputDecoration(
-                        enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(
-                                color: Color.fromRGBO(90, 90, 90, 1))),
+                        enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color.fromRGBO(90, 90, 90, 1))),
                         icon: Icon(
                           Icons.email,
                           color: Colors.white,
@@ -107,8 +100,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
                         backgroundColor: MaterialStateProperty.all<Color>(
                           Color.fromRGBO(255, 87, 34, 1),
                         ),
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),
                           ),
@@ -117,8 +109,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
                       onPressed: widget.onLoginClick,
                       child: Text(
                         "Log in",
-                        style: TextStyle(
-                            fontSize: 17, fontWeight: FontWeight.bold),
+                        style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
@@ -131,8 +122,7 @@ class _LoginScreen1State extends State<LoginScreen1> {
                         // backgroundColor: MaterialStateProperty.all<Color>(
                         //   Colors.transparent,
                         // ),
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),
                           ),
@@ -162,13 +152,10 @@ class _LoginScreen1State extends State<LoginScreen1> {
                       ),
                       child: Column(
                         children: [
-                          IconButton(
-                              icon: Icon(Icons.keyboard_arrow_up),
-                              onPressed: widget.navigatePage),
+                          IconButton(icon: Icon(Icons.keyboard_arrow_up), onPressed: widget.navigatePage),
                           Text(
                             "Sign up",
-                            style: TextStyle(
-                                fontSize: 17, fontWeight: FontWeight.bold),
+                            style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                           ),
                         ],
                       ),

@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatefulWidget {
+class LoginScreen4 extends StatefulWidget {
   final Color primaryColor;
   final Color secondaryColor;
   final Color logoGreen;
-  LoginScreen({
-    @required this.primaryColor,
-    @required this.secondaryColor,
-    @required this.logoGreen,
+  LoginScreen4({
+    this.primaryColor = const Color(0xFF990000),
+    this.secondaryColor = const Color(0xFFEEEEEE),
+    this.logoGreen = const Color(0xFF0000FF),
   });
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  _LoginScreen4State createState() => _LoginScreen4State();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _LoginScreen4State extends State<LoginScreen4> {
   TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
-  FocusNode myFocusNode;
+  FocusNode? myFocusNode;
 
   @override
   void initState() {
@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   void dispose() {
-    myFocusNode.dispose();
+    myFocusNode?.dispose();
     super.dispose();
   }
 
@@ -62,9 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                decoration: BoxDecoration(
-                    color: widget.secondaryColor,
-                    border: Border.all(color: Colors.blue)),
+                decoration: BoxDecoration(color: widget.secondaryColor, border: Border.all(color: Colors.blue)),
                 child: TextFormField(
                   controller: _emailController,
                   style: TextStyle(color: Colors.white),
@@ -80,15 +78,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   keyboardType: TextInputType.emailAddress,
                   textInputAction: TextInputAction.next,
-                  onFieldSubmitted: (_) => myFocusNode.requestFocus(),
+                  onFieldSubmitted: (_) => myFocusNode?.requestFocus(),
                 ),
               ),
               SizedBox(height: 20),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                decoration: BoxDecoration(
-                    color: widget.secondaryColor,
-                    border: Border.all(color: Colors.blue)),
+                decoration: BoxDecoration(color: widget.secondaryColor, border: Border.all(color: Colors.blue)),
                 child: TextFormField(
                   focusNode: myFocusNode,
                   controller: _passwordController,
@@ -113,8 +109,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 50,
                 onPressed: () {},
                 color: widget.logoGreen,
-                child: Text('Login',
-                    style: TextStyle(color: Colors.white, fontSize: 16)),
+                child: Text('Login', style: TextStyle(color: Colors.white, fontSize: 16)),
                 textColor: Colors.white,
               ),
               SizedBox(height: 20),
@@ -127,8 +122,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text('Sign In using Google',
-                        style: TextStyle(color: Colors.white, fontSize: 16)),
+                    Text('Sign In using Google', style: TextStyle(color: Colors.white, fontSize: 16)),
                   ],
                 ),
                 textColor: Colors.white,
@@ -141,12 +135,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: <Widget>[
                     GestureDetector(
                       onTap: () {},
-                      child: Text('Sign Up?',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold)),
+                      child: Text('Sign Up?', textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
                     ),
                   ],
                 ),
