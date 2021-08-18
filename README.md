@@ -151,6 +151,64 @@ Container(
    )
    ```
 
+  ### Login Screen 4
+
+ ![Screenshot on Android](./screenshots/login_screen_4.jpeg)
+
+ ##### Usage
+
+ ```
+ Container(
+ 	child: LoginScreen4(
+        primaryColor: Color(0xff18203d),
+        secondaryColor: Color(0xff232c51),
+        logoGreen: Color(0xff25bcbb),
+        ),
+    )
+ ```
+
+   ### Login Screen 5
+
+ ![Screenshot on Android](./screenshots/login_screen_5.jpeg)
+
+ ##### Usage
+
+ ```
+ Container(
+ 	child: LoginScreen5(
+        avatarImage: "path/to/image.png",
+        onLoginClick: () {
+          // when login button is pressed
+        },
+        googleSignIn: () {
+          // when google signin button is pressed
+        },
+        navigatePage: () {
+          // change to signup screen
+        }
+        ),
+    )
+ ```
+
+  ### Login Screen 6
+
+ ![Screenshot on Android](./screenshots/login_screen_6.jpeg)
+
+ ##### Usage
+
+ ```
+ Container(
+ 	child: LoginScreen6(
+        onLoginClick: () {
+          // when login button is pressed
+        },
+        navigatePage: () {
+          // change to signup screen
+        }
+        ),
+    )
+ ```
+
   ## Contribution and Donation
 
   Feel free to contribute. If you like the project and want to donate, [click here](https://www.paypal.me/samarthagarwal).
