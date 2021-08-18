@@ -46,9 +46,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/full-bloom.png
-    - assets/images/mountains.jpeg
-    - assets/images/mountains.jpg
+    - assets/images/
 
   fonts:
       - family: icomoon
