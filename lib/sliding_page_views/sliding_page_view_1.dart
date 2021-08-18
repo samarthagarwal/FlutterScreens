@@ -5,7 +5,7 @@ import 'package:flutterloginscreens/loaders/color_loader_3.dart';
 import 'package:flutterloginscreens/loaders/color_loader_4.dart';
 import 'package:flutterloginscreens/loaders/dot_type.dart';
 
-enum ToggleStatus { request, helper, none }
+enum ToggleStatus { left, right, middle }
 late ToggleStatus _toggleStatus;
 
 class SlidingPageViewOne extends StatefulWidget {
@@ -71,7 +71,7 @@ class _SlidingPageViewOneState extends State<SlidingPageViewOne> {
   @override
   void initState() {
     super.initState();
-    _toggleStatus = ToggleStatus.none;
+    _toggleStatus = ToggleStatus.middle;
   }
 
   @override
@@ -126,18 +126,18 @@ class _ToggleSwitchState extends State<ToggleSwitch> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Visibility(
-                      visible: _toggleStatus != ToggleStatus.helper,
+                      visible: _toggleStatus != ToggleStatus.right,
                       child: DragTargetChild(
                           text: "Page 1",
-                          color: _toggleStatus == ToggleStatus.none
+                          color: _toggleStatus == ToggleStatus.middle
                               ? Colors.white
                               : Colors.white70),
                     ),
                     Visibility(
-                      visible: _toggleStatus != ToggleStatus.request,
+                      visible: _toggleStatus != ToggleStatus.left,
                       child: DragTargetChild(
                           text: "Page 3",
-                          color: _toggleStatus == ToggleStatus.none
+                          color: _toggleStatus == ToggleStatus.middle
                               ? Colors.white
                               : Colors.white70),
                     ),
@@ -161,18 +161,18 @@ class _ToggleSwitchState extends State<ToggleSwitch> {
                               details.delta.dx / context.size!.width)
                           .clamp(.0, 1.0);
                       if (valueListener.value <= 0.4) {
-                        setState(() => _toggleStatus = ToggleStatus.helper);
+                        setState(() => _toggleStatus = ToggleStatus.right);
                         changeToggle(false);
                       }
 
                       if (valueListener.value >= 0.6) {
-                        setState(() => _toggleStatus = ToggleStatus.request);
+                        setState(() => _toggleStatus = ToggleStatus.left);
                         changeToggle(true);
                       }
 
                       if (valueListener.value >= 0.46 &&
                           valueListener.value <= 0.56) {
-                        setState(() => _toggleStatus = ToggleStatus.none);
+                        setState(() => _toggleStatus = ToggleStatus.middle);
                         _toggleMiddle();
                       }
                     },
@@ -221,9 +221,9 @@ class _ToggleSwitchState extends State<ToggleSwitch> {
   }
 
   initialSliderValue() {
-    if (_toggleStatus == ToggleStatus.request)
+    if (_toggleStatus == ToggleStatus.left)
       val = 1.0;
-    else if (_toggleStatus == ToggleStatus.helper)
+    else if (_toggleStatus == ToggleStatus.right)
       val = 0.0;
     else
       val = 0.5;
