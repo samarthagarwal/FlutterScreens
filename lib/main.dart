@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_screens/misc/slide_list_view.dart';
-
-import 'login_screen_1.dart';
+import 'package:flutter_login_screens/login_screen_3.dart';
 
 void main() => runApp(new MyApp());
 
@@ -13,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(),
+      home: MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -29,19 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Container(
-        child: SlideListView(
-          view1: buildPage(Colors.red, "Page 1"),
-          view2: buildPage(Colors.green, "Page 2"),
-          floatingActionButtonColor: Colors.yellow[800],
-          floatingActionButtonIcon: AnimatedIcons.view_list,
-          showFloatingActionButton: true,
-          defaultView: "slides",
-          duration: Duration(
-            milliseconds: 800,
-          ),
-        ),
-      ),
+      body: LoginScreen3(),
     );
   }
 

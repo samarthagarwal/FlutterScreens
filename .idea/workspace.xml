@@ -9,8 +9,86 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0159c001-1a27-4f70-926c-30cd81d61e07" name="Default" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="7c8ceedb-66d9-41a6-848a-c0e4a88369c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/com/samarth/flutterloginscreens/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_login_screens.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Examples/buttons.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Examples/buttons.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/buttons/simple_round_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/buttons/simple_round_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/buttons/simple_round_icon_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/buttons/simple_round_icon_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/buttons/simple_round_only_icon_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/buttons/simple_round_only_icon_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/experiments/graph.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/experiments/graph.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/loaders/color_loader.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/loaders/color_loader.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/loaders/color_loader_2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/loaders/color_loader_2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/loaders/color_loader_3.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/loaders/color_loader_3.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/loaders/color_loader_4.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/loaders/color_loader_4.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/loaders/color_loader_5.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/loaders/color_loader_5.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/loaders/flip_loader.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/loaders/flip_loader.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login_screen_1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login_screen_1.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login_screen_2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login_screen_2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/misc/rating.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/misc/rating.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/misc/slide_list_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/misc/slide_list_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,56 +97,12 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="flutter_login_screens" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dart File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>white</find>
-      <find>button</find>
-      <find>LOGIN</find>
-      <find>Icon</find>
-      <find>_controller</find>
-      <find>login</find>
-      <find>print</find>
-      <find>begin</find>
-      <find>pi</find>
-      <find>controller.value</find>
-      <find>widget.</find>
-      <find>radius/2</find>
-      <find>radius / 4 +</find>
-      <find>dotRadius/2</find>
-      <find>radius/dotRadius +</find>
-      <find>radius *</find>
-      <find>2 * (radius-dotRadius)</find>
-      <find>dispose</find>
-      <find>dispo</find>
-      <find>FontAwesomeIcons.solidStar</find>
-      <find>FontAwesomeIcons.star</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>controller.value</replace>
-      <replace>0.0</replace>
-      <replace>radius/4</replace>
-      <replace>radius / 4</replace>
-      <replace>radius/2</replace>
-      <replace>+</replace>
-      <replace>-</replace>
-      <replace>radius/2 - dotRadius</replace>
-      <replace>dotRadius/2</replace>
-      <replace>dotRadius/4</replace>
-      <replace>2 * (radius-dotRadius) *</replace>
-      <replace>radius</replace>
-      <replace>Icons.</replace>
-      <replace>Icons.star_border</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -83,10 +117,17 @@
   <component name="ProjectReloadState">
     <option name="STATE" value="1" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537811019205" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -99,18 +140,6 @@
       <recent name="C:\Users\Samarth\Desktop\Projects\flutter_login_screens\lib\loaders" />
       <recent name="$PROJECT_DIR$/lib/buttons" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
@@ -270,7 +299,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0159c001-1a27-4f70-926c-30cd81d61e07" name="Default" comment="" />
+      <changelist id="7c8ceedb-66d9-41a6-848a-c0e4a88369c7" name="Default Changelist" comment="" />
       <created>1531561389514</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -366,6 +395,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Login Screen 3 Added" />
@@ -374,5 +404,23 @@
     <MESSAGE value="Added Loaders&#10;- ColorLoader&#10;- FlipLoader&#10;- FlipLoader2" />
     <MESSAGE value="Added Loaders&#10;- ColorLoader&#10;- ColorLoader2&#10;&#10;Restructured the FlipLoader to accept params&#10;- FlipLoader&#10;&#10;Removed&#10;- FlipLoader2&#10;- FlipLoader3" />
     <option name="LAST_COMMIT_MESSAGE" value="Added Loaders&#10;- ColorLoader&#10;- ColorLoader2&#10;&#10;Restructured the FlipLoader to accept params&#10;- FlipLoader&#10;&#10;Removed&#10;- FlipLoader2&#10;- FlipLoader3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1184" height="272" key="GridCell.Tab.0.bottom" timestamp="1629276491132">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1184" height="272" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1629276491132" />
+    <state width="1184" height="272" key="GridCell.Tab.0.center" timestamp="1629276491132">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1184" height="272" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1629276491132" />
+    <state width="1184" height="272" key="GridCell.Tab.0.left" timestamp="1629276491132">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1184" height="272" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1629276491132" />
+    <state width="1184" height="272" key="GridCell.Tab.0.right" timestamp="1629276491132">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1184" height="272" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1629276491132" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
-import 'package:flutter_login_screens/loaders/dot_type.dart';
+import 'dot_type.dart';
 
 class ColorLoader4 extends StatefulWidget {
 
@@ -26,10 +26,10 @@ class ColorLoader4 extends StatefulWidget {
 
 class _ColorLoader4State extends State<ColorLoader4>
     with SingleTickerProviderStateMixin {
-  Animation<double> animation_1;
-  Animation<double> animation_2;
-  Animation<double> animation_3;
-  AnimationController controller;
+  late Animation<double> animation_1;
+  late Animation<double> animation_2;
+  late Animation<double> animation_3;
+  late AnimationController controller;
 
   @override
   void initState() {
@@ -142,10 +142,10 @@ class _ColorLoader4State extends State<ColorLoader4>
 }
 
 class Dot extends StatelessWidget {
-  final double radius;
-  final Color color;
-  final DotType type;
-  final Icon icon;
+  final double? radius;
+  final Color? color;
+  final DotType? type;
+  final Icon? icon;
 
   Dot({this.radius, this.color, this.type, this.icon});
 
@@ -153,7 +153,7 @@ class Dot extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Center(
       child: type == DotType.icon ?
-          Icon(icon.icon, color: color, size: 1.3 * radius,)
+          Icon(icon!.icon, color: color, size: 1.3 * radius!,)
           : new Transform.rotate(
         angle: type == DotType.diamond ? pi/4 : 0.0,
         child: Container(

@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
 
 class SimpleRoundButton extends StatelessWidget {
+  final Color? backgroundColor;
+  final Text? buttonText;
+  final Function? onPressed;
 
-  final Color backgroundColor;
-  final Text buttonText;
-  final Function onPressed;
-
-  SimpleRoundButton({
-    this.backgroundColor,
-    this.buttonText,
-    this.onPressed
-  });
+  SimpleRoundButton({this.backgroundColor, this.buttonText, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -20,11 +15,13 @@ class SimpleRoundButton extends StatelessWidget {
       child: new Row(
         children: <Widget>[
           new Expanded(
-            child: FlatButton(
-              shape: new RoundedRectangleBorder(
-                  borderRadius: new BorderRadius.circular(30.0)),
-              splashColor: this.backgroundColor,
-              color: this.backgroundColor,
+            child: TextButton(
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(30.0))),
+                overlayColor: MaterialStateProperty.all(this.backgroundColor),
+                backgroundColor: MaterialStateProperty.all(this.backgroundColor),
+              ),
               child: new Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -34,7 +31,7 @@ class SimpleRoundButton extends StatelessWidget {
                   ),
                 ],
               ),
-              onPressed: onPressed,
+              onPressed: () => onPressed!(),
             ),
           ),
         ],
