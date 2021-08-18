@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'login_screen_1.dart';
+import 'package:flutterloginscreens/Examples/buttons.dart';
+import 'package:flutterloginscreens/buttons/simple_round_button.dart';
+import 'package:flutterloginscreens/buttons/simple_round_icon_button.dart';
+import 'package:flutterloginscreens/buttons/simple_round_only_icon_button.dart';
+import 'package:flutterloginscreens/experiments/graph.dart';
+import 'package:flutterloginscreens/misc/rating.dart';
 import 'misc/slide_list_view.dart';
 
 void main() => runApp(new MyApp());
@@ -12,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(),
+      home: MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
