@@ -6,6 +6,12 @@ A collection of Login Screens, Buttons, Loaders and Widgets with attractive UIs,
 
 ## Screenshots And Usage
 
+## Tik Tok Swipe Up
+
+tik tok like Flutter Swipe Up UI using pageView widget.
+
+![Screenshots on iOS](./screenshots/swipe_up.gif)
+
 ## SlideListView
 
 A widget that can be used to present two different views that can be toggled using a Floating Action Button. The views toggle with a nice cube-rotation animation.
