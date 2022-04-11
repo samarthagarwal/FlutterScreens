@@ -129,17 +129,33 @@ class SimpleRoundOnlyIconButton extends StatelessWidget {
                                     right: 5.0,
                                     top: 10.0,
                                     bottom: 10.0),
-                                child: FlatButton(
-                                  shape: new RoundedRectangleBorder(
-                                      borderRadius:
-                                          new BorderRadius.circular(28.0)),
-                                  splashColor: Colors.white,
-                                  color: Colors.white,
-                                  child: Icon(
-                                    icon!.icon,
-                                    color: this.iconColor,
+                                child:
+                                    // FlatButton(
+                                    //   shape: new RoundedRectangleBorder(
+                                    //       borderRadius:
+                                    //           new BorderRadius.circular(28.0)),
+                                    //   splashColor: Colors.white,
+                                    //   color: Colors.white,
+                                    //   child: Icon(
+                                    //     icon!.icon,
+                                    //     color: this.iconColor,
+                                    //   ),
+                                    //   onPressed: () => {},
+                                    // ),
+                                    TextButton(
+                                  style: ButtonStyle(
+                                    shape: MaterialStateProperty.all(
+                                      RoundedRectangleBorder(
+                                        borderRadius:
+                                            new BorderRadius.circular(28.0),
+                                      ),
+                                    ),
+                                    backgroundColor:
+                                        MaterialStateProperty.all(Colors.white),
                                   ),
-                                  onPressed: () => {},
+                                  onPressed: () {},
+                                  child:
+                                      Icon(icon!.icon, color: this.iconColor),
                                 ),
                               ),
                             )
