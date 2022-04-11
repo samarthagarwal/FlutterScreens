@@ -45,19 +45,29 @@ class SimpleRoundIconButton extends StatelessWidget {
                             offset: Offset(-10.0, 0.0),
                             child: new Container(
                               padding: const EdgeInsets.all(5.0),
-                              child: FlatButton(
-                                shape: new RoundedRectangleBorder(
-                                    borderRadius:
-                                        new BorderRadius.circular(28.0)),
-                                splashColor: Colors.white,
-                                color: Colors.white,
+                              child:
+                                  //  FlatButton(
+                                  //   shape: new RoundedRectangleBorder(
+                                  //       borderRadius:
+                                  //           new BorderRadius.circular(28.0)),
+                                  //   splashColor: Colors.white,
+                                  //   color: Colors.white,
+                                  //   child: Icon(
+                                  //     icon.icon,
+                                  //     color: iconColor == null
+                                  //         ? backgroundColor
+                                  //         : iconColor,
+                                  //   ),
+                                  //   onPressed: () => {},
+                                  // ),
+                                  TextButton(
+                                onPressed: () {},
                                 child: Icon(
                                   icon.icon,
                                   color: iconColor == null
                                       ? backgroundColor
                                       : iconColor,
                                 ),
-                                onPressed: () => {},
                               ),
                             ),
                           )
@@ -78,19 +88,39 @@ class SimpleRoundIconButton extends StatelessWidget {
                             offset: Offset(10.0, 0.0),
                             child: new Container(
                               padding: const EdgeInsets.all(5.0),
-                              child: FlatButton(
-                                shape: new RoundedRectangleBorder(
-                                    borderRadius:
-                                        new BorderRadius.circular(28.0)),
-                                splashColor: Colors.white,
-                                color: Colors.white,
+                              child:
+                                  // FlatButton(
+                                  //   shape: new RoundedRectangleBorder(
+                                  //       borderRadius:
+                                  //           new BorderRadius.circular(28.0)),
+                                  //   splashColor: Colors.white,
+                                  //   color: Colors.white,
+                                  //   child: Icon(
+                                  //     icon.icon,
+                                  //     color: iconColor == null
+                                  //         ? backgroundColor
+                                  //         : iconColor,
+                                  //   ),
+                                  //   onPressed: () => {},
+                                  // ),
+                                  TextButton(
+                                style: ButtonStyle(
+                                  shape: MaterialStateProperty.all(
+                                    RoundedRectangleBorder(
+                                      borderRadius:
+                                          new BorderRadius.circular(28.0),
+                                    ),
+                                  ),
+                                  backgroundColor:
+                                      MaterialStateProperty.all(Colors.white),
+                                ),
+                                onPressed: () {},
                                 child: Icon(
                                   icon.icon,
                                   color: iconColor == null
                                       ? backgroundColor
                                       : iconColor,
                                 ),
-                                onPressed: () => {},
                               ),
                             ),
                           )
