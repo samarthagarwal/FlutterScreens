@@ -148,9 +148,15 @@ class LoginScreen2 extends StatelessWidget {
                 child: new Row(
                   children: <Widget>[
                     new Expanded(
-                      child: new FlatButton(
-                        padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-                        color: this.highlightColor,
+                      child: new TextButton(
+                        style: new ButtonStyle(
+                          padding: MaterialStateProperty.all(
+                            new EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+                          ),
+                          backgroundColor: MaterialStateProperty.all(
+                            this.highlightColor,
+                          )
+                        ),
                         onPressed: () => {},
                         child: Text(
                           "Log In",
@@ -168,9 +174,15 @@ class LoginScreen2 extends StatelessWidget {
                 child: new Row(
                   children: <Widget>[
                     new Expanded(
-                      child: new FlatButton(
-                        padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-                        color: Colors.transparent,
+                      child: new TextButton(
+                        style: new ButtonStyle(
+                          padding: MaterialStateProperty.all(
+                            new EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+                          ),
+                          backgroundColor: MaterialStateProperty.all(
+                            Colors.transparent,
+                          )
+                        ),
                         onPressed: () => {},
                         child: Text(
                           "Forgot your password?",
@@ -191,9 +203,15 @@ class LoginScreen2 extends StatelessWidget {
                 child: new Row(
                   children: <Widget>[
                     new Expanded(
-                      child: new FlatButton(
-                        padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-                        color: Colors.transparent,
+                      child: new TextButton(
+                        style: new ButtonStyle(
+                          padding: MaterialStateProperty.all(
+                            new EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+                          ),
+                          backgroundColor: MaterialStateProperty.all(
+                            Colors.transparent,
+                          )
+                        ),
                         onPressed: () => {},
                         child: Text(
                           "Don't have an account? Create One",
