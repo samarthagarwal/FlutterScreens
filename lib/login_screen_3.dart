@@ -169,11 +169,17 @@ class _LoginScreen3State extends State<LoginScreen3>
             child: new Row(
               children: <Widget>[
                 new Expanded(
-                  child: new OutlineButton(
-                    shape: new RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(30.0)),
-                    color: Colors.redAccent,
-                    highlightedBorderColor: Colors.white,
+                  child: new OutlinedButton(
+                    style: new ButtonStyle(
+                      shape: MaterialStateProperty.all(
+                        new RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(30.0),
+                        ),
+                      ),
+                      backgroundColor: MaterialStateProperty.all(
+                        Colors.redAccent,
+                      ),
+                    ),
                     onPressed: () => gotoSignup(),
                     child: new Container(
                       padding: const EdgeInsets.symmetric(
@@ -207,11 +213,18 @@ class _LoginScreen3State extends State<LoginScreen3>
             child: new Row(
               children: <Widget>[
                 new Expanded(
-                  child: new FlatButton(
-                    shape: new RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(30.0)),
-                    color: Colors.white,
-                    onPressed: () => gotoLogin(),
+                  child: new TextButton(
+                    style: new ButtonStyle(
+                      shape: MaterialStateProperty.all(
+                        new RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(30.0),
+                        ),
+                      ),
+                      backgroundColor: MaterialStateProperty.all(
+                        Colors.redAccent,
+                      )
+                    ),
+                    onPressed: () => {},
                     child: new Container(
                       padding: const EdgeInsets.symmetric(
                         vertical: 20.0,
@@ -373,7 +386,7 @@ class _LoginScreen3State extends State<LoginScreen3>
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.only(right: 20.0),
-                child: new FlatButton(
+                child: new TextButton(
                   child: new Text(
                     "Forgot Password?",
                     style: TextStyle(
@@ -395,11 +408,17 @@ class _LoginScreen3State extends State<LoginScreen3>
             child: new Row(
               children: <Widget>[
                 new Expanded(
-                  child: new FlatButton(
-                    shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(30.0),
+                  child: new TextButton(
+                    style: new ButtonStyle(
+                      shape: MaterialStateProperty.all(
+                        new RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(30.0),
+                        ),
+                      ),
+                      backgroundColor: MaterialStateProperty.all(
+                        Colors.redAccent,
+                      )
                     ),
-                    color: Colors.redAccent,
                     onPressed: () => {},
                     child: new Container(
                       padding: const EdgeInsets.symmetric(
@@ -466,22 +485,29 @@ class _LoginScreen3State extends State<LoginScreen3>
                     child: new Row(
                       children: <Widget>[
                         new Expanded(
-                          child: new FlatButton(
-                            shape: new RoundedRectangleBorder(
-                              borderRadius: new BorderRadius.circular(30.0),
+                          child: new TextButton(
+                            style: new ButtonStyle(
+                              shape: MaterialStateProperty.all(
+                                new RoundedRectangleBorder(
+                                  borderRadius: new BorderRadius.circular(30.0),
+                                ),
+                              ),
+                              backgroundColor: MaterialStateProperty.all(
+                                new Color(0Xff3B5998),
+                              ),
                             ),
-                            color: Color(0Xff3B5998),
                             onPressed: () => {},
                             child: new Container(
                               child: new Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   new Expanded(
-                                    child: new FlatButton(
+                                    child: new TextButton(
                                       onPressed: ()=>{},
-                                      padding: EdgeInsets.only(
-                                        top: 20.0,
-                                        bottom: 20.0,
+                                      style: new ButtonStyle(
+                                        padding: MaterialStateProperty.all(
+                                          new EdgeInsets.symmetric(vertical: 20)
+                                        ),
                                       ),
                                       child: new Row(
                                         mainAxisAlignment:
@@ -520,22 +546,29 @@ class _LoginScreen3State extends State<LoginScreen3>
                     child: new Row(
                       children: <Widget>[
                         new Expanded(
-                          child: new FlatButton(
-                            shape: new RoundedRectangleBorder(
-                              borderRadius: new BorderRadius.circular(30.0),
+                          child: new TextButton(
+                            style: new ButtonStyle(
+                              shape: MaterialStateProperty.all(
+                                new RoundedRectangleBorder(
+                                  borderRadius: new BorderRadius.circular(30.0),
+                                ),
+                              ),
+                              backgroundColor: MaterialStateProperty.all(
+                                new Color(0Xffdb3236),
+                              ),
                             ),
-                            color: Color(0Xffdb3236),
                             onPressed: () => {},
                             child: new Container(
                               child: new Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
                                   new Expanded(
-                                    child: new FlatButton(
+                                    child: new TextButton(
                                       onPressed: ()=>{},
-                                      padding: EdgeInsets.only(
-                                        top: 20.0,
-                                        bottom: 20.0,
+                                      style: new ButtonStyle(
+                                        padding: MaterialStateProperty.all(
+                                          new EdgeInsets.symmetric(vertical: 20)
+                                        ),
                                       ),
                                       child: new Row(
                                         mainAxisAlignment:
@@ -760,7 +793,7 @@ class _LoginScreen3State extends State<LoginScreen3>
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.only(right: 20.0),
-                  child: new FlatButton(
+                  child: new TextButton(
                     child: new Text(
                       "Already have an account?",
                       style: TextStyle(
@@ -782,11 +815,17 @@ class _LoginScreen3State extends State<LoginScreen3>
               child: new Row(
                 children: <Widget>[
                   new Expanded(
-                    child: new FlatButton(
-                      shape: new RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(30.0),
+                    child: new TextButton(
+                      style: new ButtonStyle(
+                        shape: MaterialStateProperty.all(
+                          new RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(30.0),
+                          ),
+                        ),
+                        backgroundColor: MaterialStateProperty.all(
+                          Colors.redAccent,
+                        ),
                       ),
-                      color: Colors.redAccent,
                       onPressed: () => {},
                       child: new Container(
                         padding: const EdgeInsets.symmetric(
