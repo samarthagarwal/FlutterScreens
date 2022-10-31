@@ -42,11 +42,17 @@ class LoginScreen1 extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           "DEMO",
-                          style: TextStyle(fontSize: 50.0, fontWeight: FontWeight.bold, color: this.primaryColor),
+                          style: TextStyle(
+                              fontSize: 50.0,
+                              fontWeight: FontWeight.bold,
+                              color: this.primaryColor),
                         ),
                         Text(
                           "Login Screen 1",
-                          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: this.primaryColor),
+                          style: TextStyle(
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                              color: this.primaryColor),
                         ),
                       ],
                     ),
@@ -68,11 +74,13 @@ class LoginScreen1 extends StatelessWidget {
                   ),
                   borderRadius: BorderRadius.circular(20.0),
                 ),
-                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 20.0),
                 child: Row(
                   children: <Widget>[
                     new Padding(
-                      padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
+                      padding: EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 15.0),
                       child: Icon(
                         Icons.person_outline,
                         color: Colors.grey,
@@ -111,11 +119,13 @@ class LoginScreen1 extends StatelessWidget {
                   ),
                   borderRadius: BorderRadius.circular(20.0),
                 ),
-                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 20.0),
                 child: Row(
                   children: <Widget>[
                     new Padding(
-                      padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
+                      padding: EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 15.0),
                       child: Icon(
                         Icons.lock_open,
                         color: Colors.grey,
@@ -146,7 +156,8 @@ class LoginScreen1 extends StatelessWidget {
                   children: <Widget>[
                     new Expanded(
                       child: FlatButton(
-                        shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
+                        shape: new RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(30.0)),
                         splashColor: this.primaryColor,
                         color: this.primaryColor,
                         child: new Row(
@@ -166,7 +177,9 @@ class LoginScreen1 extends StatelessWidget {
                               child: new Container(
                                 padding: const EdgeInsets.all(5.0),
                                 child: FlatButton(
-                                  shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(28.0)),
+                                  shape: new RoundedRectangleBorder(
+                                      borderRadius:
+                                          new BorderRadius.circular(28.0)),
                                   splashColor: Colors.white,
                                   color: Colors.white,
                                   child: Icon(
@@ -192,7 +205,8 @@ class LoginScreen1 extends StatelessWidget {
                   children: <Widget>[
                     new Expanded(
                       child: FlatButton(
-                        shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
+                        shape: new RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(30.0)),
                         splashColor: Color(0xFF3B5998),
                         color: Color(0xff3B5998),
                         child: new Row(
@@ -212,11 +226,14 @@ class LoginScreen1 extends StatelessWidget {
                               child: new Container(
                                 padding: const EdgeInsets.all(5.0),
                                 child: FlatButton(
-                                  shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(28.0)),
+                                  shape: new RoundedRectangleBorder(
+                                      borderRadius:
+                                          new BorderRadius.circular(28.0)),
                                   splashColor: Colors.white,
                                   color: Colors.white,
                                   child: Icon(
-                                    const IconData(0xea90, fontFamily: 'icomoon'),
+                                    const IconData(0xea90,
+                                        fontFamily: 'icomoon'),
                                     color: Color(0xff3b5998),
                                   ),
                                   onPressed: () => {},
@@ -238,7 +255,8 @@ class LoginScreen1 extends StatelessWidget {
                   children: <Widget>[
                     new Expanded(
                       child: FlatButton(
-                        shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
+                        shape: new RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(30.0)),
                         color: Colors.transparent,
                         child: Container(
                           padding: const EdgeInsets.only(left: 20.0),
