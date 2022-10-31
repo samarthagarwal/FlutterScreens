@@ -1,4 +1,51 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'
+    show
+        Alignment,
+        AlwaysScrollableScrollPhysics,
+        AssetImage,
+        Axis,
+        BlendMode,
+        Border,
+        BorderRadius,
+        BorderSide,
+        BorderStyle,
+        BoxDecoration,
+        BoxFit,
+        BuildContext,
+        Center,
+        Color,
+        ColorFilter,
+        Colors,
+        Column,
+        Container,
+        CrossAxisAlignment,
+        Curves,
+        DecorationImage,
+        Divider,
+        EdgeInsets,
+        Expanded,
+        FontWeight,
+        Icon,
+        IconData,
+        Icons,
+        InputBorder,
+        InputDecoration,
+        MainAxisAlignment,
+        MediaQuery,
+        Padding,
+        PageController,
+        PageView,
+        RoundedRectangleBorder,
+        Row,
+        SingleChildScrollView,
+        State,
+        StatefulWidget,
+        Text,
+        TextAlign,
+        TextField,
+        TextStyle,
+        TickerProviderStateMixin,
+        Widget;
 
 class LoginScreen3 extends StatefulWidget {
   @override
@@ -7,7 +54,6 @@ class LoginScreen3 extends StatefulWidget {
 
 class _LoginScreen3State extends State<LoginScreen3>
     with TickerProviderStateMixin {
-
   //The code is commented because instead of manual scrolling with animation,
   //Now PageView is being used
 
@@ -478,14 +524,14 @@ class _LoginScreen3State extends State<LoginScreen3>
                                 children: <Widget>[
                                   new Expanded(
                                     child: new FlatButton(
-                                      onPressed: ()=>{},
+                                      onPressed: () => {},
                                       padding: EdgeInsets.only(
                                         top: 20.0,
                                         bottom: 20.0,
                                       ),
                                       child: new Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
+                                            MainAxisAlignment.spaceEvenly,
                                         children: <Widget>[
                                           Icon(
                                             const IconData(0xea90,
@@ -532,14 +578,14 @@ class _LoginScreen3State extends State<LoginScreen3>
                                 children: <Widget>[
                                   new Expanded(
                                     child: new FlatButton(
-                                      onPressed: ()=>{},
+                                      onPressed: () => {},
                                       padding: EdgeInsets.only(
                                         top: 20.0,
                                         bottom: 20.0,
                                       ),
                                       child: new Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
+                                            MainAxisAlignment.spaceEvenly,
                                         children: <Widget>[
                                           Icon(
                                             const IconData(0xea88,
@@ -648,11 +694,9 @@ class _LoginScreen3State extends State<LoginScreen3>
                 ],
               ),
             ),
-
             Divider(
               height: 24.0,
             ),
-
             new Row(
               children: <Widget>[
                 new Expanded(
@@ -837,7 +881,8 @@ class _LoginScreen3State extends State<LoginScreen3>
     );
   }
 
-  PageController _controller = new PageController(initialPage: 1, viewportFraction: 1.0);
+  PageController _controller =
+      new PageController(initialPage: 1, viewportFraction: 1.0);
 
   @override
   Widget build(BuildContext context) {

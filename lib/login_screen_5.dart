@@ -29,7 +29,9 @@ class _LoginScreen5State extends State<LoginScreen5> {
             width: double.infinity,
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/images/signin_page_background.png'), fit: BoxFit.fill),
+              image: DecorationImage(
+                  image: AssetImage('assets/images/signin_page_background.png'),
+                  fit: BoxFit.fill),
             ),
           ),
           Container(
@@ -48,7 +50,10 @@ class _LoginScreen5State extends State<LoginScreen5> {
                 children: [
                   Text(
                     "Welcome Back",
-                    style: TextStyle(fontSize: 17, color: Color.fromRGBO(147, 148, 184, 1), fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 17,
+                        color: Color.fromRGBO(147, 148, 184, 1),
+                        fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 30),
                   Container(
@@ -57,7 +62,9 @@ class _LoginScreen5State extends State<LoginScreen5> {
                       controller: emailController,
                       cursorColor: Colors.white,
                       decoration: InputDecoration(
-                        enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color.fromRGBO(90, 90, 90, 1))),
+                        enabledBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                                color: Color.fromRGBO(90, 90, 90, 1))),
                         icon: Icon(
                           Icons.email,
                           color: Colors.white,
@@ -100,7 +107,8 @@ class _LoginScreen5State extends State<LoginScreen5> {
                         backgroundColor: MaterialStateProperty.all<Color>(
                           Color.fromRGBO(255, 87, 34, 1),
                         ),
-                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),
                           ),
@@ -109,7 +117,8 @@ class _LoginScreen5State extends State<LoginScreen5> {
                       onPressed: widget.onLoginClick,
                       child: Text(
                         "Log in",
-                        style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 17, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
@@ -122,7 +131,8 @@ class _LoginScreen5State extends State<LoginScreen5> {
                         // backgroundColor: MaterialStateProperty.all<Color>(
                         //   Colors.transparent,
                         // ),
-                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),
                           ),
@@ -152,10 +162,13 @@ class _LoginScreen5State extends State<LoginScreen5> {
                       ),
                       child: Column(
                         children: [
-                          IconButton(icon: Icon(Icons.keyboard_arrow_up), onPressed: widget.navigatePage),
+                          IconButton(
+                              icon: Icon(Icons.keyboard_arrow_up),
+                              onPressed: widget.navigatePage),
                           Text(
                             "Sign up",
-                            style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                fontSize: 17, fontWeight: FontWeight.bold),
                           ),
                         ],
                       ),
