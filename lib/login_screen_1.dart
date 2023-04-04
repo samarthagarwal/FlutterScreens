@@ -42,11 +42,17 @@ class LoginScreen1 extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           "DEMO",
-                          style: TextStyle(fontSize: 50.0, fontWeight: FontWeight.bold, color: this.primaryColor),
+                          style: TextStyle(
+                              fontSize: 50.0,
+                              fontWeight: FontWeight.bold,
+                              color: this.primaryColor),
                         ),
                         Text(
                           "Login Screen 1",
-                          style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: this.primaryColor),
+                          style: TextStyle(
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                              color: this.primaryColor),
                         ),
                       ],
                     ),
@@ -68,11 +74,13 @@ class LoginScreen1 extends StatelessWidget {
                   ),
                   borderRadius: BorderRadius.circular(20.0),
                 ),
-                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 20.0),
                 child: Row(
                   children: <Widget>[
                     new Padding(
-                      padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
+                      padding: EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 15.0),
                       child: Icon(
                         Icons.person_outline,
                         color: Colors.grey,
@@ -111,11 +119,13 @@ class LoginScreen1 extends StatelessWidget {
                   ),
                   borderRadius: BorderRadius.circular(20.0),
                 ),
-                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 20.0),
                 child: Row(
                   children: <Widget>[
                     new Padding(
-                      padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
+                      padding: EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 15.0),
                       child: Icon(
                         Icons.lock_open,
                         color: Colors.grey,
@@ -145,10 +155,13 @@ class LoginScreen1 extends StatelessWidget {
                 child: new Row(
                   children: <Widget>[
                     new Expanded(
-                      child: FlatButton(
-                        shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
-                        splashColor: this.primaryColor,
-                        color: this.primaryColor,
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          shape: new RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(30.0)),
+                          // splashColor: this.primaryColor,
+                          backgroundColor: this.primaryColor,
+                        ),
                         child: new Row(
                           children: <Widget>[
                             new Padding(
@@ -165,10 +178,14 @@ class LoginScreen1 extends StatelessWidget {
                               offset: Offset(15.0, 0.0),
                               child: new Container(
                                 padding: const EdgeInsets.all(5.0),
-                                child: FlatButton(
-                                  shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(28.0)),
-                                  splashColor: Colors.white,
-                                  color: Colors.white,
+                                child: TextButton(
+                                  style: TextButton.styleFrom(
+                                    shape: new RoundedRectangleBorder(
+                                        borderRadius:
+                                            new BorderRadius.circular(30.0)),
+                                    // splashColor: this.primaryColor,
+                                    backgroundColor: this.primaryColor,
+                                  ),
                                   child: Icon(
                                     Icons.arrow_forward,
                                     color: this.primaryColor,
@@ -191,10 +208,13 @@ class LoginScreen1 extends StatelessWidget {
                 child: new Row(
                   children: <Widget>[
                     new Expanded(
-                      child: FlatButton(
-                        shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
-                        splashColor: Color(0xFF3B5998),
-                        color: Color(0xff3B5998),
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(30.0)),
+                          // splashColor: Color(0xFF3B5998),
+                          backgroundColor: Color(0xff3B5998),
+                        ),
                         child: new Row(
                           children: <Widget>[
                             new Padding(
@@ -211,12 +231,17 @@ class LoginScreen1 extends StatelessWidget {
                               offset: Offset(15.0, 0.0),
                               child: new Container(
                                 padding: const EdgeInsets.all(5.0),
-                                child: FlatButton(
-                                  shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(28.0)),
-                                  splashColor: Colors.white,
-                                  color: Colors.white,
+                                child: TextButton(
+                                  style: TextButton.styleFrom(
+                                    shape: new RoundedRectangleBorder(
+                                        borderRadius:
+                                            new BorderRadius.circular(28.0)),
+                                    // splashColor: Colors.white,
+                                    backgroundColor: Colors.white,
+                                  ),
                                   child: Icon(
-                                    const IconData(0xea90, fontFamily: 'icomoon'),
+                                    const IconData(0xea90,
+                                        fontFamily: 'icomoon'),
                                     color: Color(0xff3b5998),
                                   ),
                                   onPressed: () => {},
@@ -237,9 +262,12 @@ class LoginScreen1 extends StatelessWidget {
                 child: new Row(
                   children: <Widget>[
                     new Expanded(
-                      child: FlatButton(
-                        shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
-                        color: Colors.transparent,
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          shape: new RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(30.0)),
+                          backgroundColor: Colors.transparent,
+                        ),
                         child: Container(
                           padding: const EdgeInsets.only(left: 20.0),
                           alignment: Alignment.center,
