@@ -28,6 +28,12 @@ class _GraphState extends State<Graph> with SingleTickerProviderStateMixin {
   }
 
   @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Center(
       child: Stack(
