@@ -170,32 +170,26 @@ class LoginScreen1 extends StatelessWidget {
                                 style: TextStyle(color: Colors.white),
                               ),
                             ),
-                            Expanded(
-                              child: Container(),
-                            ),
-                            Transform.translate(
-                              offset: Offset(15.0, 0.0),
-                              child: Container(
-                                padding: const EdgeInsets.all(5.0),
-                                child: TextButton(
-                                  style: TextButton.styleFrom(
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(30.0)),
-                                    // splashColor: this.primaryColor,
-                                    backgroundColor: this.primaryColor,
+                            Spacer(),
+                            Container(
+                              padding: const EdgeInsets.all(5.0),
+                              child: TextButton(
+                                style: TextButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(30.0),
                                   ),
-                                  child: Icon(
-                                    Icons.arrow_forward,
-                                    color: this.primaryColor,
-                                  ),
-                                  onPressed: () => {},
+                                  // splashColor: this.primaryColor,
+                                  backgroundColor: Colors.white,
                                 ),
+                                child: Icon(
+                                  Icons.arrow_forward,
+                                ),
+                                onPressed: () => {},
                               ),
-                            )
+                            ),
                           ],
                         ),
-                        onPressed: () => {},
+                        onPressed: () {},
                       ),
                     ),
                   ],
@@ -223,33 +217,27 @@ class LoginScreen1 extends StatelessWidget {
                                 style: TextStyle(color: Colors.white),
                               ),
                             ),
-                            Expanded(
-                              child: Container(),
-                            ),
-                            Transform.translate(
-                              offset: Offset(15.0, 0.0),
-                              child: Container(
-                                padding: const EdgeInsets.all(5.0),
-                                child: TextButton(
-                                  style: TextButton.styleFrom(
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(28.0)),
-                                    // splashColor: Colors.white,
-                                    backgroundColor: Colors.white,
-                                  ),
-                                  child: Icon(
-                                    const IconData(0xea90,
-                                        fontFamily: 'icomoon'),
-                                    color: Color(0xff3b5998),
-                                  ),
-                                  onPressed: () => {},
+                            Spacer(),
+                            Container(
+                              padding: const EdgeInsets.all(5.0),
+                              child: TextButton(
+                                style: TextButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius:
+                                          BorderRadius.circular(28.0)),
+                                  // splashColor: Colors.white,
+                                  backgroundColor: Colors.white,
                                 ),
+                                child: Icon(
+                                  const IconData(0xea90, fontFamily: 'icomoon'),
+                                  color: Color(0xff3b5998),
+                                ),
+                                onPressed: () => {},
                               ),
                             )
                           ],
                         ),
-                        onPressed: () => {},
+                        onPressed: () {},
                       ),
                     ),
                   ],
