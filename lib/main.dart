@@ -17,11 +17,29 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
       debugShowCheckedModeBanner: false,
+      home: MyHomePage(),
+      routes: _routes,
     );
   }
 }
+
+Map<String, WidgetBuilder> _routes = <String, WidgetBuilder>{
+  "/login1": (BuildContext context) => LoginScreen1(),
+  "/login2": (BuildContext context) => LoginScreen2(),
+  "/login3": (BuildContext context) => LoginScreen3(),
+  "/login4": (BuildContext context) => LoginScreen4(),
+  "/login5": (BuildContext context) => LoginScreen5(
+        avatarImage: 'assets/images/mountains.png',
+        googleSignIn: () {},
+        navigatePage: () {},
+        onLoginClick: () {},
+      ),
+  "/login6": (BuildContext context) => LoginScreen6(
+        navigatePage: () {},
+        onLoginClick: () {},
+      ),
+};
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -29,53 +47,99 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<Widget> pages = [
-    LoginScreen1(),
-    LoginScreen2(),
-    LoginScreen3(),
-    LoginScreen4(),
-    LoginScreen5(
-      avatarImage: 'assets/images/mountains.png',
-      googleSignIn: () {},
-      navigatePage: () {},
-      onLoginClick: () {},
-    ),
-    LoginScreen6(
-      navigatePage: () {},
-      onLoginClick: () {},
-    ),
-  ];
-  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: PageView.builder(
-        itemCount: pages.length,
-        itemBuilder: (context, index) {
-          return pages[index];
-        },
-        onPageChanged: (index) {
-          setState(() {
-            currentIndex = index;
-          });
-        },
-      ),
-    );
-  }
-
-  Widget buildPage(Color color, String text) {
-    return Container(
-      color: color,
-      child: Center(
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: 50.0,
-            color: Colors.white,
+      body: Column(children: [
+        SizedBox(
+          height: 100,
+        ),
+        Center(
+          child: Text(
+            'Flutter Login Screen',
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
-      ),
+        SizedBox(
+          height: 50,
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).pushNamed("/login1");
+          },
+          child: Text(
+            'Login Screen 1',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).pushNamed("/login2");
+          },
+          child: Text(
+            'Login Screen 2',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).pushNamed("/login3");
+          },
+          child: Text(
+            'Login Screen 3',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).pushNamed("/login4");
+          },
+          child: Text(
+            'Login Screen 4',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).pushNamed("/login5");
+          },
+          child: Text(
+            'Login Screen 5',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).pushNamed("/login6");
+          },
+          child: Text(
+            'Login Screen 6',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ]),
     );
   }
 }
