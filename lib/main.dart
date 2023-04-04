@@ -4,6 +4,7 @@ import 'package:flutter_login_screens/login_screen_3.dart';
 import 'package:flutter_login_screens/login_screen_4.dart';
 
 import 'Examples/buttons.dart';
+import 'experiments/graph.dart';
 import 'loaders/load_view.dart';
 import 'login_screen_1.dart';
 import 'login_screen_5.dart';
@@ -43,6 +44,9 @@ Map<String, WidgetBuilder> _routes = <String, WidgetBuilder>{
       ),
   "/buttonExample": (context) => ButtonExample(),
   "/loaderExample": (context) => LoaderWidgetPreview(),
+  "/graphExample": (context) => Scaffold(
+      appBar: AppBar(title: Text("Graph Example")),
+      body: Center(child: Graph())),
 };
 
 class MyHomePage extends StatefulWidget {
@@ -54,6 +58,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("flutter_screens"),
+      ),
       backgroundColor: Colors.white,
       body: Column(
         children: [
