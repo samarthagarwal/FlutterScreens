@@ -3,6 +3,8 @@ import 'package:flutter_login_screens/login_screen_2.dart';
 import 'package:flutter_login_screens/login_screen_3.dart';
 import 'package:flutter_login_screens/login_screen_4.dart';
 
+import 'Examples/buttons.dart';
+import 'loaders/load_view.dart';
 import 'login_screen_1.dart';
 import 'login_screen_5.dart';
 import 'login_screen_6.dart';
@@ -39,6 +41,8 @@ Map<String, WidgetBuilder> _routes = <String, WidgetBuilder>{
         navigatePage: () {},
         onLoginClick: () {},
       ),
+  "/buttonExample": (context) => ButtonExample(),
+  "/loaderExample": (context) => LoaderWidgetPreview(),
 };
 
 class MyHomePage extends StatefulWidget {
@@ -51,95 +55,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(children: [
-        SizedBox(
-          height: 100,
-        ),
-        Center(
-          child: Text(
-            'Flutter Login Screen',
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
+      body: Column(
+        children: [
+          for (final route in _routes.keys)
+            ListTile(
+              title: Text(route.replaceAll("/", "")),
+              onTap: () => Navigator.pushNamed(context, route),
             ),
-          ),
-        ),
-        SizedBox(
-          height: 50,
-        ),
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pushNamed("/login1");
-          },
-          child: Text(
-            'Login Screen 1',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pushNamed("/login2");
-          },
-          child: Text(
-            'Login Screen 2',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pushNamed("/login3");
-          },
-          child: Text(
-            'Login Screen 3',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pushNamed("/login4");
-          },
-          child: Text(
-            'Login Screen 4',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pushNamed("/login5");
-          },
-          child: Text(
-            'Login Screen 5',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        TextButton(
-          onPressed: () {
-            Navigator.of(context).pushNamed("/login6");
-          },
-          child: Text(
-            'Login Screen 6',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-      ]),
+        ],
+      ),
     );
   }
 }
