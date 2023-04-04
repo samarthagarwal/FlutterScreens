@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen1 extends StatelessWidget {
@@ -17,7 +16,7 @@ class LoginScreen1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: new Container(
+        child: Container(
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
             color: this.backgroundColor,
@@ -27,11 +26,11 @@ class LoginScreen1 extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
               Expanded(
-                child: new ClipPath(
+                child: ClipPath(
                   clipper: MyClipper(),
                   child: Container(
                     decoration: BoxDecoration(
-                      image: new DecorationImage(
+                      image: DecorationImage(
                         image: this.backgroundImage,
                         fit: BoxFit.cover,
                       ),
@@ -78,7 +77,7 @@ class LoginScreen1 extends StatelessWidget {
                     vertical: 10.0, horizontal: 20.0),
                 child: Row(
                   children: <Widget>[
-                    new Padding(
+                    Padding(
                       padding: EdgeInsets.symmetric(
                           vertical: 10.0, horizontal: 15.0),
                       child: Icon(
@@ -92,7 +91,7 @@ class LoginScreen1 extends StatelessWidget {
                       color: Colors.grey.withOpacity(0.5),
                       margin: const EdgeInsets.only(left: 00.0, right: 10.0),
                     ),
-                    new Expanded(
+                    Expanded(
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
@@ -123,7 +122,7 @@ class LoginScreen1 extends StatelessWidget {
                     vertical: 10.0, horizontal: 20.0),
                 child: Row(
                   children: <Widget>[
-                    new Padding(
+                    Padding(
                       padding: EdgeInsets.symmetric(
                           vertical: 10.0, horizontal: 15.0),
                       child: Icon(
@@ -137,7 +136,7 @@ class LoginScreen1 extends StatelessWidget {
                       color: Colors.grey.withOpacity(0.5),
                       margin: const EdgeInsets.only(left: 00.0, right: 10.0),
                     ),
-                    new Expanded(
+                    Expanded(
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
@@ -152,37 +151,37 @@ class LoginScreen1 extends StatelessWidget {
               Container(
                 margin: const EdgeInsets.only(top: 20.0),
                 padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                child: new Row(
+                child: Row(
                   children: <Widget>[
-                    new Expanded(
+                    Expanded(
                       child: TextButton(
                         style: TextButton.styleFrom(
-                          shape: new RoundedRectangleBorder(
-                              borderRadius: new BorderRadius.circular(30.0)),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30.0)),
                           // splashColor: this.primaryColor,
                           backgroundColor: this.primaryColor,
                         ),
-                        child: new Row(
+                        child: Row(
                           children: <Widget>[
-                            new Padding(
+                            Padding(
                               padding: const EdgeInsets.only(left: 20.0),
                               child: Text(
                                 "LOGIN",
                                 style: TextStyle(color: Colors.white),
                               ),
                             ),
-                            new Expanded(
+                            Expanded(
                               child: Container(),
                             ),
-                            new Transform.translate(
+                            Transform.translate(
                               offset: Offset(15.0, 0.0),
-                              child: new Container(
+                              child: Container(
                                 padding: const EdgeInsets.all(5.0),
                                 child: TextButton(
                                   style: TextButton.styleFrom(
-                                    shape: new RoundedRectangleBorder(
+                                    shape: RoundedRectangleBorder(
                                         borderRadius:
-                                            new BorderRadius.circular(30.0)),
+                                            BorderRadius.circular(30.0)),
                                     // splashColor: this.primaryColor,
                                     backgroundColor: this.primaryColor,
                                   ),
@@ -205,37 +204,37 @@ class LoginScreen1 extends StatelessWidget {
               Container(
                 margin: const EdgeInsets.only(top: 10.0),
                 padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                child: new Row(
+                child: Row(
                   children: <Widget>[
-                    new Expanded(
+                    Expanded(
                       child: TextButton(
                         style: TextButton.styleFrom(
                           shape: RoundedRectangleBorder(
-                              borderRadius: new BorderRadius.circular(30.0)),
+                              borderRadius: BorderRadius.circular(30.0)),
                           // splashColor: Color(0xFF3B5998),
                           backgroundColor: Color(0xff3B5998),
                         ),
-                        child: new Row(
+                        child: Row(
                           children: <Widget>[
-                            new Padding(
+                            Padding(
                               padding: const EdgeInsets.only(left: 20.0),
                               child: Text(
                                 "LOGIN WITH FACEBOOK",
                                 style: TextStyle(color: Colors.white),
                               ),
                             ),
-                            new Expanded(
+                            Expanded(
                               child: Container(),
                             ),
-                            new Transform.translate(
+                            Transform.translate(
                               offset: Offset(15.0, 0.0),
-                              child: new Container(
+                              child: Container(
                                 padding: const EdgeInsets.all(5.0),
                                 child: TextButton(
                                   style: TextButton.styleFrom(
-                                    shape: new RoundedRectangleBorder(
+                                    shape: RoundedRectangleBorder(
                                         borderRadius:
-                                            new BorderRadius.circular(28.0)),
+                                            BorderRadius.circular(28.0)),
                                     // splashColor: Colors.white,
                                     backgroundColor: Colors.white,
                                   ),
@@ -259,13 +258,13 @@ class LoginScreen1 extends StatelessWidget {
               Container(
                 margin: const EdgeInsets.only(top: 20.0),
                 padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                child: new Row(
+                child: Row(
                   children: <Widget>[
-                    new Expanded(
+                    Expanded(
                       child: TextButton(
                         style: TextButton.styleFrom(
-                          shape: new RoundedRectangleBorder(
-                              borderRadius: new BorderRadius.circular(30.0)),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30.0)),
                           backgroundColor: Colors.transparent,
                         ),
                         child: Container(
@@ -293,7 +292,7 @@ class LoginScreen1 extends StatelessWidget {
 class MyClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
-    Path p = new Path();
+    Path p = Path();
     p.lineTo(size.width, 0.0);
     p.lineTo(size.width, size.height * 0.85);
     p.arcToPoint(
