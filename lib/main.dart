@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_login_screens/login_screen_2.dart';
 import 'package:flutter_login_screens/login_screen_3.dart';
 import 'package:flutter_login_screens/login_screen_4.dart';
+import 'package:flutter_login_screens/misc/rating.dart';
+import 'package:flutter_login_screens/misc/slide_list_view.dart';
 
 import 'Examples/buttons.dart';
 import 'experiments/graph.dart';
@@ -47,6 +49,27 @@ Map<String, WidgetBuilder> _routes = <String, WidgetBuilder>{
   "/graphExample": (context) => Scaffold(
       appBar: AppBar(title: Text("Graph Example")),
       body: Center(child: Graph())),
+  "/misc": (context) => Scaffold(
+        appBar: AppBar(title: Text("Misc")),
+        body: Center(
+          child: Column(
+            children: [
+              SelectableText("https://pub.dev/packages/flutter_rating_bar"),
+              Expanded(
+                ///todo::
+                child: SlideListView(
+                  view1: Container(
+                    color: Colors.red,
+                  ),
+                  view2: Container(
+                    color: Colors.green,
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
+      )
 };
 
 class MyHomePage extends StatefulWidget {

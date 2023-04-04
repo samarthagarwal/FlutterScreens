@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+///! use https://pub.dev/packages/flutter_rating_bar
+///dont like waste time on this
 class Rating extends StatefulWidget {
   final int? initialRating;
   final void Function(int)? onRated;
