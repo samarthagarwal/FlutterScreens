@@ -2,6 +2,17 @@
 
 A collection of Login Screens, Buttons, Loaders and Widgets with attractive UIs, built with Flutter, ready to be used in your applications.
 
+## TODO
+
+- [x] fixed button breaking changes
+- [x] Compatible & upgrade to flutter 3.7.9
+- [x] added device so that it can run and test
+- [x] home to navigate between different pages
+- [x] fixed-others runtime error
+- [x] Skipped rating while it has good package on pub.dev
+- [ ] slide_list_view
+- [ ] Missing main asset images
+
 ###### Last Update: Added SlideListView Widget
 
 ## Screenshots And Usage
@@ -22,12 +33,14 @@ A widget that can be used to present two different views that can be toggled usi
 
 #### ColorLoaders
 
-| ![Screenshot](./screenshots/color_loader.gif) Color Loader 1 | ![Screenshot](./screenshots/color_loader_2.gif) Color Loader 2 | ![Screenshot](./screenshots/color_loader_3.gif) Color Loader 3 |
-|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| ![Screenshot](./screenshots/color_loader_4.gif) Color Loader 4 | ![Screenshot](./screenshots/color_loader_5.gif) Color Loader 5 |                                               |
+| ![Screenshot](./screenshots/color_loader.gif) Color Loader 1   | ![Screenshot](./screenshots/color_loader_2.gif) Color Loader 2 | ![Screenshot](./screenshots/color_loader_3.gif) Color Loader 3 |
+| -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| ![Screenshot](./screenshots/color_loader_4.gif) Color Loader 4 | ![Screenshot](./screenshots/color_loader_5.gif) Color Loader 5 |                                                                |
 
 #### FlipLoaders
+
 _Example #1_
+
 ```
 FlipLoader(
   loaderBackground: Colors.red,
@@ -35,7 +48,9 @@ FlipLoader(
   icon: Icons.email,
   animationType: "full_flip"),
 ```
+
 _Example #2_
+
 ```
 FlipLoader(
   loaderBackground: Colors.blueAccent,
@@ -45,7 +60,9 @@ FlipLoader(
   rotateIcon: true,
 ),
 ```
+
 _Example #3_
+
 ```
 FlipLoader(
   loaderBackground: Colors.green,
@@ -56,21 +73,23 @@ FlipLoader(
   rotateIcon: false,
 ),
 ```
-___
-###### I am working on more loaders. These loaders will also be updated. Thanks to [jakeleveroni](https://github.com/jakeleveroni) for parameterizing the FlipLoader. 
-___
+
+---
+
+###### I am working on more loaders. These loaders will also be updated. Thanks to [jakeleveroni](https://github.com/jakeleveroni) for parameterizing the FlipLoader.
+
+---
 
 ## Buttons
 
 ![Screenshots on iOS](./screenshots/buttons1.png)
-
 
 #### Simple Round Button
 
 ```
 SimpleRoundButton(
     backgroundColor: Colors.redAccent,
-    buttonText: Text("LOGIN", 
+    buttonText: Text("LOGIN",
         style: TextStyle(
             color: Colors.white
         ),
@@ -79,22 +98,23 @@ SimpleRoundButton(
 )
 ```
 
-#### Simple Round Icon Button 
+#### Simple Round Icon Button
 
 ```
 SimpleRoundIconButton(
     backgroundColor: Colors.orangeAccent,
-    buttonText: Text("SEND EMAIL", 
+    buttonText: Text("SEND EMAIL",
         style: TextStyle(
             color: Colors.white
         ),
-    ),        
+    ),
     textColor: Colors.white,
     icon: Icon(Icons.email),
 )
 ```
 
-#### Simple Round Icon Only Button 
+#### Simple Round Icon Only Button
+
 ```
 SimpleRoundOnlyIconButton(
   backgroundColor: Colors.blueAccent,
@@ -102,7 +122,9 @@ SimpleRoundOnlyIconButton(
   iconAlignment: Alignment.center,
 )
 ```
-___
+
+---
+
 ## Login Screens
 
 ### Login Screen 1
@@ -121,94 +143,94 @@ Container(
 )
 ```
 
- ### Login Screen 2
+### Login Screen 2
 
- ![Screenshots on Android and iOS](./screenshots/login_screen_2.png)
+![Screenshots on Android and iOS](./screenshots/login_screen_2.png)
 
- ##### Usage
+##### Usage
 
- ```
- Container(
- 	child: LoginScreen2(
-        backgroundColor1: Color(0xFF444152),
-        backgroundColor2: Color(0xFF6f6c7d),
-        highlightColor: Color(0xfff65aa3),
-        foregroundColor: Colors.white,
-        logo: new AssetImage("assets/images/full-bloom.png"),
-        ),
-    )
- ```
-
-   ### Login Screen 3
-
-   ![Screenshots on Android and iOS](./screenshots/login_screen_3.gif)
-
-   ##### Usage
-
-   ```
-   Container(
-   	child: LoginScreen3(),
+```
+Container(
+	child: LoginScreen2(
+       backgroundColor1: Color(0xFF444152),
+       backgroundColor2: Color(0xFF6f6c7d),
+       highlightColor: Color(0xfff65aa3),
+       foregroundColor: Colors.white,
+       logo: new AssetImage("assets/images/full-bloom.png"),
+       ),
    )
-   ```
+```
 
-  ### Login Screen 4
+### Login Screen 3
 
- ![Screenshot on Android](./screenshots/login_screen_4.jpeg)
+![Screenshots on Android and iOS](./screenshots/login_screen_3.gif)
 
- ##### Usage
+##### Usage
 
- ```
- Container(
- 	child: LoginScreen4(
-        primaryColor: Color(0xff18203d),
-        secondaryColor: Color(0xff232c51),
-        logoGreen: Color(0xff25bcbb),
-        ),
-    )
- ```
+```
+Container(
+	child: LoginScreen3(),
+)
+```
 
-   ### Login Screen 5
+### Login Screen 4
 
- ![Screenshot on Android](./screenshots/login_screen_5.jpeg)
+![Screenshot on Android](./screenshots/login_screen_4.jpeg)
 
- ##### Usage
+##### Usage
 
- ```
- Container(
- 	child: LoginScreen5(
-        avatarImage: "path/to/image.png",
-        onLoginClick: () {
-          // when login button is pressed
-        },
-        googleSignIn: () {
-          // when google signin button is pressed
-        },
-        navigatePage: () {
-          // change to signup screen
-        }
-        ),
-    )
- ```
+```
+Container(
+	child: LoginScreen4(
+       primaryColor: Color(0xff18203d),
+       secondaryColor: Color(0xff232c51),
+       logoGreen: Color(0xff25bcbb),
+       ),
+   )
+```
 
-  ### Login Screen 6
+### Login Screen 5
 
- ![Screenshot on Android](./screenshots/login_screen_6.jpeg)
+![Screenshot on Android](./screenshots/login_screen_5.jpeg)
 
- ##### Usage
+##### Usage
 
- ```
- Container(
- 	child: LoginScreen6(
-        onLoginClick: () {
-          // when login button is pressed
-        },
-        navigatePage: () {
-          // change to signup screen
-        }
-        ),
-    )
- ```
+```
+Container(
+	child: LoginScreen5(
+       avatarImage: "path/to/image.png",
+       onLoginClick: () {
+         // when login button is pressed
+       },
+       googleSignIn: () {
+         // when google signin button is pressed
+       },
+       navigatePage: () {
+         // change to signup screen
+       }
+       ),
+   )
+```
 
-  ## Contribution and Donation
+### Login Screen 6
 
-  Feel free to contribute. If you like the project and want to donate, [click here](https://www.paypal.me/samarthagarwal).
+![Screenshot on Android](./screenshots/login_screen_6.jpeg)
+
+##### Usage
+
+```
+Container(
+	child: LoginScreen6(
+       onLoginClick: () {
+         // when login button is pressed
+       },
+       navigatePage: () {
+         // change to signup screen
+       }
+       ),
+   )
+```
+
+## Contribution and Donation
+
+Feel free to contribute. If you like the project and want to donate, [click here](https://www.paypal.me/samarthagarwal).
