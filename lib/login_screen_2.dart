@@ -21,12 +21,17 @@ class LoginScreen2 extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          decoration: new BoxDecoration(
-            gradient: new LinearGradient(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
               begin: Alignment.centerLeft,
-              end: new Alignment(1.0, 0.0), // 10% of the width, so there are ten blinds.
-              colors: [this.backgroundColor1!, this.backgroundColor2!], // whitish to gray
-              tileMode: TileMode.repeated, // repeats the gradient over the canvas
+              end: Alignment(
+                  1.0, 0.0), // 10% of the width, so there are ten blinds.
+              colors: [
+                this.backgroundColor1!,
+                this.backgroundColor2!
+              ], // whitish to gray
+              tileMode:
+                  TileMode.repeated, // repeats the gradient over the canvas
             ),
           ),
           height: MediaQuery.of(context).size.height,
@@ -35,16 +40,16 @@ class LoginScreen2 extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.only(top: 110.0, bottom: 50.0),
                 child: Center(
-                  child: new Column(
+                  child: Column(
                     children: <Widget>[
                       Container(
                         height: 128.0,
                         width: 128.0,
-                        child: new CircleAvatar(
+                        child: CircleAvatar(
                           backgroundColor: Colors.transparent,
                           foregroundColor: this.foregroundColor,
                           radius: 100.0,
-                          child: new Text(
+                          child: Text(
                             "S",
                             style: TextStyle(
                               fontSize: 50.0,
@@ -61,9 +66,9 @@ class LoginScreen2 extends StatelessWidget {
                           //image: DecorationImage(image: this.logo)
                         ),
                       ),
-                      new Padding(
+                      Padding(
                         padding: const EdgeInsets.all(16.0),
-                        child: new Text(
+                        child: Text(
                           "Samarth Agarwal",
                           style: TextStyle(color: this.foregroundColor),
                         ),
@@ -72,28 +77,32 @@ class LoginScreen2 extends StatelessWidget {
                   ),
                 ),
               ),
-              new Container(
+              Container(
                 width: MediaQuery.of(context).size.width,
                 margin: const EdgeInsets.only(left: 40.0, right: 40.0),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   border: Border(
-                    bottom: BorderSide(color: this.foregroundColor!, width: 0.5, style: BorderStyle.solid),
+                    bottom: BorderSide(
+                        color: this.foregroundColor!,
+                        width: 0.5,
+                        style: BorderStyle.solid),
                   ),
                 ),
                 padding: const EdgeInsets.only(left: 0.0, right: 10.0),
-                child: new Row(
+                child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    new Padding(
-                      padding: EdgeInsets.only(top: 10.0, bottom: 10.0, right: 00.0),
+                    Padding(
+                      padding:
+                          EdgeInsets.only(top: 10.0, bottom: 10.0, right: 00.0),
                       child: Icon(
                         Icons.alternate_email,
                         color: this.foregroundColor,
                       ),
                     ),
-                    new Expanded(
+                    Expanded(
                       child: TextField(
                         textAlign: TextAlign.center,
                         decoration: InputDecoration(
@@ -106,28 +115,33 @@ class LoginScreen2 extends StatelessWidget {
                   ],
                 ),
               ),
-              new Container(
+              Container(
                 width: MediaQuery.of(context).size.width,
-                margin: const EdgeInsets.only(left: 40.0, right: 40.0, top: 10.0),
+                margin:
+                    const EdgeInsets.only(left: 40.0, right: 40.0, top: 10.0),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   border: Border(
-                    bottom: BorderSide(color: this.foregroundColor!, width: 0.5, style: BorderStyle.solid),
+                    bottom: BorderSide(
+                        color: this.foregroundColor!,
+                        width: 0.5,
+                        style: BorderStyle.solid),
                   ),
                 ),
                 padding: const EdgeInsets.only(left: 0.0, right: 10.0),
-                child: new Row(
+                child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    new Padding(
-                      padding: EdgeInsets.only(top: 10.0, bottom: 10.0, right: 00.0),
+                    Padding(
+                      padding:
+                          EdgeInsets.only(top: 10.0, bottom: 10.0, right: 00.0),
                       child: Icon(
                         Icons.lock_open,
                         color: this.foregroundColor,
                       ),
                     ),
-                    new Expanded(
+                    Expanded(
                       child: TextField(
                         obscureText: true,
                         textAlign: TextAlign.center,
@@ -141,16 +155,20 @@ class LoginScreen2 extends StatelessWidget {
                   ],
                 ),
               ),
-              new Container(
+              Container(
                 width: MediaQuery.of(context).size.width,
-                margin: const EdgeInsets.only(left: 40.0, right: 40.0, top: 30.0),
+                margin:
+                    const EdgeInsets.only(left: 40.0, right: 40.0, top: 30.0),
                 alignment: Alignment.center,
-                child: new Row(
+                child: Row(
                   children: <Widget>[
-                    new Expanded(
-                      child: new FlatButton(
-                        padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-                        color: this.highlightColor,
+                    Expanded(
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 20.0, horizontal: 20.0),
+                          backgroundColor: this.highlightColor,
+                        ),
                         onPressed: () => {},
                         child: Text(
                           "Log In",
@@ -161,43 +179,53 @@ class LoginScreen2 extends StatelessWidget {
                   ],
                 ),
               ),
-              new Container(
+              Container(
                 width: MediaQuery.of(context).size.width,
-                margin: const EdgeInsets.only(left: 40.0, right: 40.0, top: 10.0),
+                margin:
+                    const EdgeInsets.only(left: 40.0, right: 40.0, top: 10.0),
                 alignment: Alignment.center,
-                child: new Row(
+                child: Row(
                   children: <Widget>[
-                    new Expanded(
-                      child: new FlatButton(
-                        padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-                        color: Colors.transparent,
+                    Expanded(
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 20.0, horizontal: 20.0),
+                          backgroundColor: Colors.transparent,
+                        ),
                         onPressed: () => {},
                         child: Text(
                           "Forgot your password?",
-                          style: TextStyle(color: this.foregroundColor!.withOpacity(0.5)),
+                          style: TextStyle(
+                              color: this.foregroundColor!.withOpacity(0.5)),
                         ),
                       ),
                     ),
                   ],
                 ),
               ),
-              new Expanded(
+              Expanded(
                 child: Divider(),
               ),
-              new Container(
+              Container(
                 width: MediaQuery.of(context).size.width,
-                margin: const EdgeInsets.only(left: 40.0, right: 40.0, top: 10.0, bottom: 20.0),
+                margin: const EdgeInsets.only(
+                    left: 40.0, right: 40.0, top: 10.0, bottom: 20.0),
                 alignment: Alignment.center,
-                child: new Row(
+                child: Row(
                   children: <Widget>[
-                    new Expanded(
-                      child: new FlatButton(
-                        padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-                        color: Colors.transparent,
+                    Expanded(
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 20.0, horizontal: 20.0),
+                          backgroundColor: Colors.transparent,
+                        ),
                         onPressed: () => {},
                         child: Text(
                           "Don't have an account? Create One",
-                          style: TextStyle(color: this.foregroundColor!.withOpacity(0.5)),
+                          style: TextStyle(
+                              color: this.foregroundColor!.withOpacity(0.5)),
                         ),
                       ),
                     ),

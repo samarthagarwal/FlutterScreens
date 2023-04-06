@@ -8,17 +8,15 @@ class ColorLoader extends StatefulWidget {
   ColorLoader({this.colors, this.duration});
 
   @override
-  _ColorLoaderState createState() =>
-      _ColorLoaderState(this.colors!, this.duration!);
+  _ColorLoaderState createState() => _ColorLoaderState();
 }
 
 class _ColorLoaderState extends State<ColorLoader>
     with SingleTickerProviderStateMixin {
-  final List<Color> colors;
-  final Duration duration;
+  late final List<Color> colors =
+      widget.colors ?? [Colors.red, Colors.green, Colors.blue, Colors.yellow];
+  late final Duration duration = widget.duration ?? Duration(seconds: 2);
   late Timer timer;
-
-  _ColorLoaderState(this.colors, this.duration);
 
   //noSuchMethod(Invocation i) => super.noSuchMethod(i);
 
@@ -31,8 +29,6 @@ class _ColorLoaderState extends State<ColorLoader>
   @override
   void initState() {
     super.initState();
-
-
 
     controller = new AnimationController(
       vsync: this,
