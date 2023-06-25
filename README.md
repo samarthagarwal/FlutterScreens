@@ -208,7 +208,24 @@ Container(
         ),
     )
  ```
+ #### Login Screen 7
+  
+  ![Screenshot on Android](screenshots/login_screen-7.png)
+
+   ```
+ Container(
+ 	child: LoginScreen7(
+        onLoginClick: () {
+          // when login button is pressed
+        },
+        navigatePage: () {
+          // change to signup screen
+        }
+        ),
+    )
+ ```
 
   ## Contribution and Donation
+
 
   Feel free to contribute. If you like the project and want to donate, [click here](https://www.paypal.me/samarthagarwal).
